@@ -1,0 +1,33 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+/* padding하고 border는 넓이를 늘리는 요소인데 넓이를 늘리지 않도록 하는 속성 */
+
+ul, ol, li { list-style: none; }
+ /* ul li앞에 동그라미 삭제 */
+
+a { text-decoration: none; color: inherit; } 
+/* text-decoration: none; underline 제거 */
+/* 색상은 상속받아 - 파란색 말고 누군가가 상속해준 스타일을 적용  */
+
+address, em { font-style: normal; }
+/* em태그와 address태그는 기본적으로 글자가 기울어짐 태그에 있는 기울어짐을 초기화 함 */
+
+h1, h2, h3, h4, h5, h6, strong, th { font-size: inherit; font-weight: inherit; }
+/* 글자크기 두꺼움을 초기화*/
+
+input, button, select { color: inherit; font-family: inherit; font-size: inherit;}
+/* 기본 서체가 적용되지 않는 요소 초기화  */
+
+button { background-color: transparent; border: 0; cursor: pointer; }
+/* button 태그는 기본스타일 초기화 배경투명, 테두리삭제, 마우스오버하면 손모양 */
+
+table { border-collapse: collapse; border: 0;}
+/* table태그 기본 속성 초기화 테이블의 셀의 경계여백초기화, 테이블 기본border 삭제*/
+
+table caption { display: none; }
+/* 테이블 태그는 접근성상 caption을 줘야하는데 화면에는 표시 안함 */
+
+fieldset { border: 0;}
+/* form태그의 기본 속성 테두리삭제 */
+
+legend { display: none; }
+/* form의 제목 - 접근성때문에 입력 */
