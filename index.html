@@ -6,8 +6,6 @@
     <link rel="shortcut icon" type="image/svg" href="favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
@@ -17,11 +15,12 @@
     <div id="wrap">
         <header>
             <ul>
-                <li><a href="#n">Home</a></li>
+                <li class="on"><a href="#n">Home</a></li>
                 <li><a href="#n">Profile</a></li>
                 <li><a href="#n">1st Project</a></li>
                 <li><a href="#n">2nd Project</a></li>
-                <li><a href="#n">3rd Project</a></li>
+                <!--<li><a href="#n">3rd Project</a></li>-->
+
             </ul>
         </header>
         <div class="container">
@@ -131,14 +130,76 @@
                                             <strong>Illustrator / Xd / Html5 / Css3 / jquery</strong>
                                         </div>
                                     </div>
-                                    <div class="bus_mockup"></div>
+                                    <div class="bus_mockup">
+                                        <a href="wjbus/index.html" class="wj_link">
+                                            <img class="device_img" src="images/wj.png" alt="디바이스목업">
+                                            <img class="bus_img" src="images/bus.png" alt="버스">
+                                            <img class="tree_img" src="images/tree.png" alt="나무">
+                                            <img class="cloud1_img" src="images/cloud1.png" alt="구름1">
+                                            <img class="cloud2_img" src="images/cloud2.png" alt="구름2">
+                                            <img class="shadow" src="images/shadow.png" alt="그림자">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="swiper-slide">
+                        <section class="project2">
+                            <div class="wrapper">
+                                <div class="kid">
+                                    <div class="kid_txt">
+                                        <h2>육아종합지원센터</h2>
+                                        <strong>About</strong>
+                                        <span>청주시 육아종합지원센터 반응형 웹 디자인</span>
+                                        <p>사용자가 보기 편하도록 화면 크기에 따라 이미지와 폰트 크기 및<br>
+                                            레이아웃의 너비를 재구성하여전체적으로 통일감을 주었습니다.<br>
+                                            또한, 어느 디바이스로 접속해도 불편하지 않도록<br>
+                                            반응형웹으로 설계하였습니다.</p>
+                                        <div class="box">
+                                            <span>프로젝트 기간</span>
+                                            <strong>2024.04</strong>
+                                        </div>
+                                        <div class="box">
+                                            <span>역할 및 기여도</span>
+                                            <strong>개인작업 100%</strong>
+                                        </div>
+                                        <div class="box">
+                                            <span>프로그램</span>
+                                            <strong class="line">Illustrator / Figma / Photoshop<br>Html5 / Css3 / jquery</strong>
+                                        </div>
+                                    </div>
+                                    <div class="kid_mockup">
+                                        <a href="cjkids2/index.html" class="kid_link">
+                                            <img class="device_img" src="images/kid.png" alt="디바이스목업">
+                                            <img class="pink_img" src="images/pink.png" alt="분홍아기장난감">
+                                            <img class="pink_balloon2_img" src="images/pink_balloon.png" alt="분홍색풍선 노란색풍선">
+                                            <img class="pink_balloon1_img" src="images/pink_balloon-1.png" alt="분홍색풍선">
+                                            <img class="pink_letter_img" src="images/pink_letter.png" alt="분홍색편지">
+                                            <img class="pink_letterWings_img" src="images/pink_letterWings.png" alt="날개">
+                                            <img class="blue_img" src="images/blue.png" alt="파란색아기장난감">
+                                            <img class="blue_balloon2_img" src="images/blue_balloon.png" alt="파란색풍선 노란색풍선">
+                                            <img class="blue_balloon1_img" src="images/blue_balloon-1.png" alt="파란색풍선">
+                                            <span class="blue_letter">
+                                                <img class="blue_letter_img" src="images/blue_letter.png" alt="파란색편지">
+                                                <img class="blue_letterWings_img" src="images/blue_letterWings.png" alt="파란색날개">
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </section>
                     </li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
-                    <li class="swiper-slide project2">project2</li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
-                    <li class="swiper-slide project3">project3</li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
-                    <li class="swiper-slide end">end</li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
+                    <li class="swiper-slide">
+                        <section class="end">
+                            <div class="wrapper">
+                                <div class="end_inner">
+                                    <img src="images/thankyou.png" alt="thankyou">
+                                    <h2 data-aos="fade-up">Thank you for watching my portfolio.</h2>
+                                </div>
+                            </div>
+                        </section>
+                    </li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
                 </ul>
                 <div class="pagination"></div> <!-- 팝업 수대로 동그라미 -->
             </div>
