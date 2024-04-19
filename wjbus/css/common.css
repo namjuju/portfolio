@@ -1,5 +1,26 @@
 @charset "utf-8"; /* 이css문서는 UTF-8방식으로 인코딩 되어 있습니다. */
 
+/* 어그로 */
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 200;
+    font-display: swap;
+    src: url(../fonts/SBAggro_light.woff) format('woff');
+}
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/SBAggro_medium.woff) format('woff');
+}
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/SBAggro_bold.woff) format('woff');
+}
+
+/* pretendard */
 @font-face {
     font-family: 'Pretendard';
     font-weight: 400;
