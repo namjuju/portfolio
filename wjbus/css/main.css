@@ -672,7 +672,7 @@
     top: 0;
     right: 0;
     z-index: -1;
-    background-color: #5da873;
+    background-color: #4cc270;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     transition-duration: 200ms;
@@ -863,7 +863,7 @@
 
 .news {
     height: 700px;
-    background: linear-gradient(45deg, Violet, Orange);
+    background: linear-gradient(157deg, rgb(174 229 174), rgb(158 231 210), rgb(152 207 183));
 }
 .news .wrapper {
     position: relative;
@@ -1353,7 +1353,7 @@
     bottom: -90px;
     right: 50%;
     z-index: 10;
-    background-color: #47803e;
+    background-color: #3ebe60;
     border-radius: 0 70px 70px 0;
     width: 50%;
     height: 100%;

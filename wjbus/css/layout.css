@@ -75,7 +75,7 @@ header .tnb a.login {
     margin-right: 20px;
 }
 header .tnb a:hover {
-    font-weight: 600;
+    font-weight: 500;
 }
 header .tnb a.login::after {
     position: absolute;
@@ -358,7 +358,8 @@ footer .f_top {
     padding-bottom: 57px;
 }
 footer .f_top ul li span {
-    font-weight: 600;
+    font-weight: 500;
+    margin-right: 7px;
     color: rgba(255, 255, 255, 0.7);
 }
 footer .f_bottom {
