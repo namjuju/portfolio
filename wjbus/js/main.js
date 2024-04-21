@@ -26,31 +26,17 @@ $(document).ready(function(){
         visual_swiper.autoplay.start();  /* 재생 기능 */
     })
 
-    $('.work .inner .work_tit ul li').on('mouseenter', function(){
-        $('.work .inner .work_tit ul li').removeClass('on')
-        $(this).addClass('on')
-    })
-
     const swiper = new Swiper('.news .swiper', { /* 팝업을 감싼는 요소의 class명 */
-	slidesPerView: "4", /* li의 넓이 비율로 안함 - css에서 준 넓이대로 함 */
+	slidesPerView: "1", /* li의 넓이 비율로 안함 - css에서 준 넓이대로 함 */
 	spaceBetween: 16, /* li와 li사이 - 제일 작은 여백 */
 	breakpoints: {
-        320: {  
-            slidesPerView: "1"
-        },
-        375: {  
-            slidesPerView: "1.2"
-        },
-        550: {  
+        450: {  
             slidesPerView: "2"
         },
 		768: {  
-            slidesPerView: "2.5"
+            slidesPerView: "3"
 		},
 		1024: { 
-            slidesPerView: "3.5"
-		},
-        1280: { 
             slidesPerView: "4"
 		},
 	},

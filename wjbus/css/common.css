@@ -1,53 +1,37 @@
-@charset "utf-8"; /* 이css문서는 UTF-8방식으로 인코딩 되어 있습니다. */
+@charset "utf-8";
 
-/* 어그로 */
 @font-face {
-    font-family: 'SBAggro';
-    font-weight: 200;
+    font-family: 'KBO-Dia-Gothic';
+    font-weight: 300;
     font-display: swap;
-    src: url(../fonts/SBAggro_light.woff) format('woff');
+    src: local('KBO-Dia-Gothic_light'), url(../fonts/KBO-Dia-Gothic_light.woff) format('woff');
 }
 @font-face {
-    font-family: 'SBAggro';
+    font-family: 'KBO-Dia-Gothic';
     font-weight: 500;
     font-display: swap;
-    src: url(../fonts/SBAggro_medium.woff) format('woff');
+    src: local('KBO-Dia-Gothic_medium'), url(../fonts/KBO-Dia-Gothic_medium.woff) format('woff');
 }
 @font-face {
-    font-family: 'SBAggro';
+    font-family: 'KBO-Dia-Gothic';
     font-weight: 600;
     font-display: swap;
-    src: url(../fonts/SBAggro_bold.woff) format('woff');
-}
-
-/* pretendard */
-@font-face {
-    font-family: 'Pretendard';
-    font-weight: 400;
-    font-display: swap;
-    src: local('Pretendard Regular'), url(../fonts/Pretendard-Regular.woff2) format('woff2'), url(../fonts/Pretendard-Regular.woff) format('woff');
-}
-@font-face {
-    font-family: 'Pretendard';
-    font-weight: 700;
-    font-display: swap;
-    src: local('Pretendard Bold'), url(../fonts/Pretendard-Bold.woff2) format('woff2'), url(../fonts/Pretendard-Bold.woff) format('woff');
+    src: local('KBO-Dia-Gothic_bold'), url(../fonts/KBO-Dia-Gothic_bold.woff) format('woff');
 }
 
 *::selection {
     background-color: #333;
     color: #2AC49E;
 }
-*::-moz-selection { /* 호환성을 위한 코드 */
+*::-moz-selection {
     background-color: #333;
     color: #2AC49E;
 }
 html, body {
-    /* 만약에 내가 정의한 웹폰트가 적용안되면, 맑은고딕(window용) 또는 애플고딕(맥용) 사용 */
-    font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', 'Dotum', '돋움', 'Apple SD Gothic Neo', '애플 SD 산돌고딕 Neo', sans-serif;
-    font-size: 15px; /* 크기 */
+    font-family:'KBO-Dia-Gothic', 'Malgun Gothic', '맑은 고딕', 'Dotum', '돋움', 'Apple SD Gothic Neo', '애플 SD 산돌고딕 Neo', sans-serif;
+    font-size: 17px; /* 크기 */
     color: #333; /* 글자색상 */
-    font-weight: 400; /* 글자의 두께 */
+    font-weight: 300; /* 글자의 두께 */
     line-height: 1.2; /* auto */
     word-break: keep-all; /* 단어를 묶어서 줄바꿈 */
     word-wrap: break-word; /* 만약 단어가 엄청 길면 분리해서 줄바꿈 */
