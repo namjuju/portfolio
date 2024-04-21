@@ -19,7 +19,7 @@
     top: 0;
     width: calc(100% - 263px);
     height: 100%;
-    background: linear-gradient(#FFF, #F4FBFF);
+    background: linear-gradient(#FFF, #dff1fb);
     border-radius: 0 0 0 70px;
     content: "";
     z-index: -1;
