@@ -38,7 +38,7 @@ legend { display: none; }
     position: relative;
 }
 .wrapper {
-    width: 77%; /* 홈페이지 넓이 */
+    width: 90vw; /* 홈페이지 넓이 */
     margin: 0 auto;  /* 가운데 정렬 */
 }
 section {
@@ -257,7 +257,7 @@ header ul li a:hover {
 }
 .project1 .bus {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 0 10vh 0;
 }
 .project1 .bus .bus_txt {
@@ -381,21 +381,22 @@ header ul li a:hover {
     cursor: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_b_100_97)'%3E%3Ccircle cx='60' cy='60' r='60' transform='matrix(-1 0 0 1 120 0)' fill='%236EA90C' fill-opacity='0.77'/%3E%3C/g%3E%3Cpath d='M36.515 38.256V40.855H18.115V38.256H25.337V36.968H29.293V38.256H36.515ZM29.247 47.709H37.251V50.377H17.379V47.709H25.383V46.973C21.404 46.789 18.667 45.984 18.667 44.167C18.667 42.074 22.301 41.315 27.315 41.315C32.329 41.315 35.963 42.074 35.963 44.167C35.963 45.984 33.226 46.789 29.247 46.973V47.709ZM22.554 44.167C22.554 44.581 24.555 44.719 27.315 44.719C30.075 44.719 32.076 44.581 32.076 44.167C32.076 43.753 30.075 43.615 27.315 43.615C24.555 43.615 22.554 43.753 22.554 44.167ZM18.529 57.392V51.136H36.101V57.392H18.529ZM22.324 53.712V54.816H32.306V53.712H22.324ZM55.534 37.75H59.053V57.392H55.534V37.75ZM50.865 44.972V37.842H54.338V57.047H50.865V48.652H49.439V44.972H50.865ZM48.519 41.614V52.792C49.071 52.677 49.554 52.539 49.968 52.378V55.736C48.795 56.265 46.932 56.472 45.207 56.472H39.365V53.068H40.446V41.614H39.526V38.21H49.485V41.614H48.519ZM43.85 41.614V53.068H45.115V41.614H43.85ZM80.625 37.75V57.392H76.738V37.75H80.625ZM68.389 37.98C72.092 37.98 74.553 40.878 74.553 47.341C74.553 53.804 72.092 56.702 68.389 56.702C64.686 56.702 62.202 53.804 62.202 47.341C62.202 40.878 64.686 37.98 68.389 37.98ZM68.389 41.545C67.078 41.545 66.043 42.948 66.043 47.341C66.043 51.757 67.078 53.137 68.389 53.137C69.677 53.137 70.712 51.757 70.712 47.341C70.712 42.948 69.677 41.545 68.389 41.545ZM98.862 37.75H102.749V57.392H98.862V37.75ZM92.997 41.775C92.951 43.546 92.79 45.179 92.514 46.674L98.218 54.08L95.136 56.38L91.18 50.998C89.593 54.494 87.086 56.449 84.096 56.472V52.562C86.971 52.24 88.949 48.077 89.087 41.775H84.648V38.21H97.206V41.775H92.997ZM38.125 67.926V71.698H35.825V80.392H31.938V60.75H35.825V67.926H38.125ZM25.659 66.983V61.21H29.477V79.472H18.046V61.21H21.864V66.983H25.659ZM21.864 75.907H25.659V70.525H21.864V75.907ZM51.417 76.16H59.375V79.702H39.503V76.16H47.461V73.952H40.607V65.948H54.453V64.614H40.561V61.21H58.294V69.191H44.448V70.548H58.524V73.952H51.417V76.16ZM82.373 67.926V71.698H80.073V80.392H76.186V60.75H80.073V67.926H82.373ZM62.179 64.752V61.21H73.288V66.523C73.288 74.504 68.987 79.472 62.179 79.472V75.792C66.894 75.746 69.332 72.273 69.332 66.523V64.752H62.179ZM102.749 60.75V80.392H98.862V60.75H102.749ZM95.826 61.21V66.523C95.826 74.504 91.387 79.472 84.51 79.472V75.792C89.271 75.746 91.847 72.204 91.847 66.523V64.752H84.51V61.21H95.826Z' fill='white'/%3E%3Cdefs%3E%3Cfilter id='filter0_b_100_97' x='-12' y='-12' width='144' height='144' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='6'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_100_97'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur_100_97' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A"), auto;
 }
 .kid_link {
-    cursor: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_b_100_96)'%3E%3Ccircle cx='60' cy='60' r='60' transform='matrix(-1 0 0 1 120 0)' fill='%23FF9900' fill-opacity='0.77'/%3E%3C/g%3E%3Cpath d='M36.515 38.256V40.855H18.115V38.256H25.337V36.968H29.293V38.256H36.515ZM29.247 47.709H37.251V50.377H17.379V47.709H25.383V46.973C21.404 46.789 18.667 45.984 18.667 44.167C18.667 42.074 22.301 41.315 27.315 41.315C32.329 41.315 35.963 42.074 35.963 44.167C35.963 45.984 33.226 46.789 29.247 46.973V47.709ZM22.554 44.167C22.554 44.581 24.555 44.719 27.315 44.719C30.075 44.719 32.076 44.581 32.076 44.167C32.076 43.753 30.075 43.615 27.315 43.615C24.555 43.615 22.554 43.753 22.554 44.167ZM18.529 57.392V51.136H36.101V57.392H18.529ZM22.324 53.712V54.816H32.306V53.712H22.324ZM55.534 37.75H59.053V57.392H55.534V37.75ZM50.865 44.972V37.842H54.338V57.047H50.865V48.652H49.439V44.972H50.865ZM48.519 41.614V52.792C49.071 52.677 49.554 52.539 49.968 52.378V55.736C48.795 56.265 46.932 56.472 45.207 56.472H39.365V53.068H40.446V41.614H39.526V38.21H49.485V41.614H48.519ZM43.85 41.614V53.068H45.115V41.614H43.85ZM80.625 37.75V57.392H76.738V37.75H80.625ZM68.389 37.98C72.092 37.98 74.553 40.878 74.553 47.341C74.553 53.804 72.092 56.702 68.389 56.702C64.686 56.702 62.202 53.804 62.202 47.341C62.202 40.878 64.686 37.98 68.389 37.98ZM68.389 41.545C67.078 41.545 66.043 42.948 66.043 47.341C66.043 51.757 67.078 53.137 68.389 53.137C69.677 53.137 70.712 51.757 70.712 47.341C70.712 42.948 69.677 41.545 68.389 41.545ZM98.862 37.75H102.749V57.392H98.862V37.75ZM92.997 41.775C92.951 43.546 92.79 45.179 92.514 46.674L98.218 54.08L95.136 56.38L91.18 50.998C89.593 54.494 87.086 56.449 84.096 56.472V52.562C86.971 52.24 88.949 48.077 89.087 41.775H84.648V38.21H97.206V41.775H92.997ZM38.125 67.926V71.698H35.825V80.392H31.938V60.75H35.825V67.926H38.125ZM25.659 66.983V61.21H29.477V79.472H18.046V61.21H21.864V66.983H25.659ZM21.864 75.907H25.659V70.525H21.864V75.907ZM51.417 76.16H59.375V79.702H39.503V76.16H47.461V73.952H40.607V65.948H54.453V64.614H40.561V61.21H58.294V69.191H44.448V70.548H58.524V73.952H51.417V76.16ZM82.373 67.926V71.698H80.073V80.392H76.186V60.75H80.073V67.926H82.373ZM62.179 64.752V61.21H73.288V66.523C73.288 74.504 68.987 79.472 62.179 79.472V75.792C66.894 75.746 69.332 72.273 69.332 66.523V64.752H62.179ZM102.749 60.75V80.392H98.862V60.75H102.749ZM95.826 61.21V66.523C95.826 74.504 91.387 79.472 84.51 79.472V75.792C89.271 75.746 91.847 72.204 91.847 66.523V64.752H84.51V61.21H95.826Z' fill='white'/%3E%3Cdefs%3E%3Cfilter id='filter0_b_100_96' x='-12' y='-12' width='144' height='144' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='6'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_100_96'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur_100_96' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A"), auto;
+    cursor: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_b_100_96)'%3E%3Ccircle cx='60' cy='60' r='60' transform='matrix(-1 0 0 1 120 0)' fill='%23FFBE16' fill-opacity='0.9'/%3E%3C/g%3E%3Cpath d='M36.515 38.256V40.855H18.115V38.256H25.337V36.968H29.293V38.256H36.515ZM29.247 47.709H37.251V50.377H17.379V47.709H25.383V46.973C21.404 46.789 18.667 45.984 18.667 44.167C18.667 42.074 22.301 41.315 27.315 41.315C32.329 41.315 35.963 42.074 35.963 44.167C35.963 45.984 33.226 46.789 29.247 46.973V47.709ZM22.554 44.167C22.554 44.581 24.555 44.719 27.315 44.719C30.075 44.719 32.076 44.581 32.076 44.167C32.076 43.753 30.075 43.615 27.315 43.615C24.555 43.615 22.554 43.753 22.554 44.167ZM18.529 57.392V51.136H36.101V57.392H18.529ZM22.324 53.712V54.816H32.306V53.712H22.324ZM55.534 37.75H59.053V57.392H55.534V37.75ZM50.865 44.972V37.842H54.338V57.047H50.865V48.652H49.439V44.972H50.865ZM48.519 41.614V52.792C49.071 52.677 49.554 52.539 49.968 52.378V55.736C48.795 56.265 46.932 56.472 45.207 56.472H39.365V53.068H40.446V41.614H39.526V38.21H49.485V41.614H48.519ZM43.85 41.614V53.068H45.115V41.614H43.85ZM80.625 37.75V57.392H76.738V37.75H80.625ZM68.389 37.98C72.092 37.98 74.553 40.878 74.553 47.341C74.553 53.804 72.092 56.702 68.389 56.702C64.686 56.702 62.202 53.804 62.202 47.341C62.202 40.878 64.686 37.98 68.389 37.98ZM68.389 41.545C67.078 41.545 66.043 42.948 66.043 47.341C66.043 51.757 67.078 53.137 68.389 53.137C69.677 53.137 70.712 51.757 70.712 47.341C70.712 42.948 69.677 41.545 68.389 41.545ZM98.862 37.75H102.749V57.392H98.862V37.75ZM92.997 41.775C92.951 43.546 92.79 45.179 92.514 46.674L98.218 54.08L95.136 56.38L91.18 50.998C89.593 54.494 87.086 56.449 84.096 56.472V52.562C86.971 52.24 88.949 48.077 89.087 41.775H84.648V38.21H97.206V41.775H92.997ZM38.125 67.926V71.698H35.825V80.392H31.938V60.75H35.825V67.926H38.125ZM25.659 66.983V61.21H29.477V79.472H18.046V61.21H21.864V66.983H25.659ZM21.864 75.907H25.659V70.525H21.864V75.907ZM51.417 76.16H59.375V79.702H39.503V76.16H47.461V73.952H40.607V65.948H54.453V64.614H40.561V61.21H58.294V69.191H44.448V70.548H58.524V73.952H51.417V76.16ZM82.373 67.926V71.698H80.073V80.392H76.186V60.75H80.073V67.926H82.373ZM62.179 64.752V61.21H73.288V66.523C73.288 74.504 68.987 79.472 62.179 79.472V75.792C66.894 75.746 69.332 72.273 69.332 66.523V64.752H62.179ZM102.749 60.75V80.392H98.862V60.75H102.749ZM95.826 61.21V66.523C95.826 74.504 91.387 79.472 84.51 79.472V75.792C89.271 75.746 91.847 72.204 91.847 66.523V64.752H84.51V61.21H95.826Z' fill='white'/%3E%3Cdefs%3E%3Cfilter id='filter0_b_100_96' x='-12' y='-12' width='144' height='144' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='6'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_100_96'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur_100_96' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A"), auto;
 }
 
 .project2 .kid {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 0 5vh 0;
     align-items: flex-end;
 }
 .project2 .kid .kid_txt h2 {
-    font-size: 100px;
+    font-size: 70px;
     color: #F6CB74;
     font-weight: 700;
     margin-bottom: 50px;
     margin-top: 20px;
+    line-height: 1;
 }
 .project2 .kid .kid_txt > strong {
     font-size: 25px;
@@ -432,20 +433,20 @@ header ul li a:hover {
 .kid .kid_mockup .device_img {
     position: relative;
     padding-top: 135px;
-    width: 777px;
+    width: 770px;
     z-index: 2;
 }
 .kid .kid_mockup .pink_img {
     position: absolute;
-    left: -155px;
+    left: -142px;
     bottom: -16px;
-    width: 222px;
+    width: 200px;
     z-index: 3;
 }
 .kid .kid_mockup .pink_balloon2_img {
     position: absolute;
-    left: -220px;
-    bottom: 30px;
+    left: -204px;
+    bottom: 27px;
     width: 143px;
     z-index: 5;
 }
@@ -462,8 +463,8 @@ header ul li a:hover {
 }
 .kid .kid_mockup .pink_balloon1_img {
     position: absolute;
-    left: -168px;
-    bottom: 83px;
+    left: -151px;
+    bottom: 96px;
     width: 87px;
     z-index: 4;
 }
@@ -475,14 +476,14 @@ header ul li a:hover {
 }
 @keyframes animate_pink_balloon1 {
     0% { transform:translate(0, 0)  }
-    50% { transform:translate(10px, 10px)  }
+    50% { transform:translate(5px, 10px)  }
     100% { transform:translate(0, 0)  }
 }
 .kid .kid_mockup .pink_letter_img {
     position: absolute;
     left: -70px;
     top: 333px;
-    width: 51px;
+    width: 40px;
     z-index: 7;
 }
 .kid .kid_mockup .pink_letter_img { 
@@ -498,9 +499,9 @@ header ul li a:hover {
 }
 .kid .kid_mockup .pink_letterWings_img {
     position: absolute;
-    left: -102px;
-    top: 326px;
-    width: 108px;
+    left: -100px;
+    top: 324px;
+    width: 93px;
     z-index: 6;
 }
 .kid .kid_mockup .pink_letterWings_img { 
@@ -518,16 +519,16 @@ header ul li a:hover {
 
 .kid .kid_mockup .blue_img {
     position: absolute;
-    right: -10px;
-    bottom: -19px;
-    width: 276px;
+    right: 0px;
+    bottom: -30px;
+    width: 220px;
     z-index: 5;
 }
 .kid .kid_mockup .blue_balloon2_img {
     position: absolute;
-    right: -25px;
-    bottom: 94px;
-    width: 139px;
+    right: -26px;
+    bottom: 61px;
+    width: 135px;
     z-index: 5;
 }
 .kid .kid_mockup .blue_balloon2_img { 
@@ -543,9 +544,9 @@ header ul li a:hover {
 }
 .kid .kid_mockup .blue_balloon1_img {
     position: absolute;
-    right: 25px;
-    bottom: 124px;
-    width: 87px;
+    right: 24px;
+    bottom: 96px;
+    width: 85px;
     z-index: 4;
 }
 .kid .kid_mockup .blue_balloon1_img { 
@@ -592,7 +593,7 @@ header ul li a:hover {
     position: absolute;
     right: 128px;
     top: 114px;
-    width: 59px;
+    width: 53px;
     z-index: 7;
 }
 .kid .kid_mockup .blue_letter_img { 
@@ -608,9 +609,9 @@ header ul li a:hover {
 }
 .kid .kid_mockup .blue_letterWings_img {
     position: absolute;
-    right: 106px;
-    top: 110px;
-    width: 104px;
+    right: 103px;
+    top: 104px;
+    width: 102px;
     z-index: 6;
 }
 .kid .kid_mockup .blue_letterWings_img { 
