@@ -441,6 +441,50 @@
     height: 200px;
     margin-top: 40px;
 }
+.footer .f_info > .wrapper {
+    position: relative;
+}
+.footer .sns {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.footer .sns ul {
+    display: flex;
+}
+.footer .sns ul li {
+    margin-right: 5px;
+}
+.footer .sns ul li:last-child {
+    margin-right: 0;
+}
+.footer .sns ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #5db3cd;
+    border-radius: 100%;
+    font-size: 0;
+    line-height: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.footer .sns ul li.facebook a {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16.014 29.9'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_114' data-name='사각형 114' width='16.014' height='29.9' fill='%23fff'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_108' data-name='그룹 108' transform='translate(0 0)'%3E%3Cg id='그룹_99' data-name='그룹 99' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_131' data-name='패스 131' d='M14.965,16.818l.83-5.411H10.6V7.9a2.705,2.705,0,0,1,3.05-2.923h2.361V.366A28.771,28.771,0,0,0,11.824,0c-4.276,0-7.07,2.591-7.07,7.283v4.125H0v5.411H4.753V29.9H10.6V16.818Z' transform='translate(0 0)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: 12px auto;
+}
+.footer .sns ul li.twitter a {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 25.514 21'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_115' data-name='사각형 115' width='25.514' height='21' fill='%23fff'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_109' data-name='그룹 109' transform='translate(0 0)'%3E%3Cg id='그룹_101' data-name='그룹 101' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_132' data-name='패스 132' d='M25.409,2.517a10.526,10.526,0,0,1-2.581.736c.415-.07,1.025-.821,1.269-1.125A4.726,4.726,0,0,0,24.954.566c.023-.045.039-.1-.005-.134a.147.147,0,0,0-.137.011,13.179,13.179,0,0,1-3.06,1.171.2.2,0,0,1-.211-.056,2.507,2.507,0,0,0-.267-.273A5.4,5.4,0,0,0,19.792.377,5.165,5.165,0,0,0,17.519.011,5.427,5.427,0,0,0,15.363.62a5.549,5.549,0,0,0-1.74,1.421,5.336,5.336,0,0,0-1.039,2.08,5.633,5.633,0,0,0-.055,2.2c.016.123.005.139-.106.123A16.34,16.34,0,0,1,1.912,1.091c-.123-.14-.189-.14-.29.01a5.331,5.331,0,0,0,.909,6.3c.206.2.418.39.646.568A5.347,5.347,0,0,1,1.148,7.4c-.123-.078-.184-.033-.2.106a3.184,3.184,0,0,0,.034.6,5.391,5.391,0,0,0,3.322,4.3,3.163,3.163,0,0,0,.674.206,6,6,0,0,1-1.99.061c-.145-.028-.2.045-.145.184a5.594,5.594,0,0,0,4.18,3.5c.19.034.379.034.569.078-.011.017-.023.017-.034.034-.47.716-2.1,1.248-2.855,1.513a10.21,10.21,0,0,1-4.335.555c-.234-.034-.282-.031-.346,0s-.008.1.067.156c.3.2.6.368.9.535a14.276,14.276,0,0,0,2.9,1.159c5.209,1.438,11.075.382,14.986-3.5,3.071-3.051,4.148-7.259,4.148-11.472,0-.164.194-.256.31-.343a10.146,10.146,0,0,0,2.039-2.121.646.646,0,0,0,.135-.406V2.517c0-.067,0-.047-.1,0' transform='translate(0 0)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: 25px auto;
+}
+.footer .sns ul li.naver a {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.839 21'%3E%3Cpath id='패스_182' data-name='패스 182' d='M15.175,0V11L7.664,0H0V21H7.664V10.429L15.175,21h7.664V0Z' transform='translate(0 0)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-size: 20px;
+}
+.footer .sns ul li.daum a {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 19.927 20.55'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_116' data-name='사각형 116' width='19.927' height='20.55' fill='%23fff'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_110' data-name='그룹 110' transform='translate(0 0)'%3E%3Cg id='그룹_103' data-name='그룹 103' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_134' data-name='패스 134' d='M9.652,0H0V20.549H9.652A10.275,10.275,0,1,0,9.652,0m.2,13.967H6.382V6.582H9.851a3.692,3.692,0,1,1,0,7.385' transform='translate(0 0)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: 20px;
+}
 .footer .f_info .f_nav ul {
     display: flex;
     flex-wrap: wrap;

@@ -500,12 +500,15 @@
     position: relative;
     align-items: stretch;
     flex-direction: column;
+    margin: 0 10vw;
     }
     .visual .visual_inner .swiper_wrap {
         width: 100%;
     }
     .visual .visual_inner .swiper_wrap .visual_btn {
         bottom: -10px;
+        width: 160px;
+        height: 41px;
     }
     .visual .visual_inner .popup_wrap {
         width: 100%;
@@ -515,6 +518,20 @@
 @media screen and (max-width:768px) {
     .visual {
         margin: 4vh 0 10vh 0;
+    }
+    .visual .visual_inner {
+        margin: 0;
+    }
+    .visual .visual_inner .swiper_wrap .visual_btn {
+        right: 4%;
+        bottom: -10px;
+        width: 140px;
+        height: 40px;
+        justify-content: center;
+    }
+    .visual .visual_inner .swiper_wrap .visual_btn .paging {
+        width: 25%;
+        margin: 10px 0 10px 6px;
     }
     .visual .visual_inner .popup_wrap {
         flex-direction: column;
@@ -554,7 +571,30 @@
     }
 } 
 @media screen and (max-width:450px) {
-
+    .visual .visual_inner .swiper_wrap .visual_btn {
+        right: 4%;
+        bottom: -10px;
+        width: 120px;
+        height: 35px;
+    }
+    .visual .visual_inner .swiper_wrap .visual_btn .ctrl_btn .stop {
+        margin-left: 5px;
+    }
+    .visual .visual_inner .swiper_wrap .visual_btn .ctrl_btn .next {
+        margin-left: 5px;
+    }
+    .visual .visual_inner .swiper_wrap .visual_btn span {
+        font-size: 13px;
+    }
+    .visual .visual_inner .swiper_wrap .visual_btn span {
+    font-size: 13px;
+    font-weight: 500;
+    }
+    .visual .visual_inner .swiper_wrap .visual_btn .ctrl_btn button {
+        width: 9px;
+        height: 12px;
+        margin-top: 11px;
+    }
     .visual .visual_inner .popup_wrap a::before {
         bottom: 5px;
         width: 90px;
@@ -579,7 +619,7 @@
     border-radius: 0 230px 230px 0; 
 }
 .icon:has(.active > .bl)::before {
-    background: linear-gradient(#F9FDFF, #EAF2FA);
+    background: linear-gradient(#daebf3, #b8dde1bd);
 }
 @media screen and (max-width:1600px) {
     .icon::before {
@@ -999,7 +1039,7 @@
     background: #f9ba68;
 }
 .notice .notice_wrap > ul  > li.active .no01 ul li a span.color {
-    background: #e7d127;
+    background: #e9c63ee0;;
 }
 .notice .notice_wrap > ul  > li.active .no02 ul li a span {
     background: #6a8ad1;
@@ -1238,7 +1278,7 @@
     width: 100%;
     height: 500px;
     z-index: -1;
-    background: linear-gradient(#FFF, #f4fbff);
+    background: linear-gradient(#FFF, #e7f0f5);
     border-radius: 0 0 10% 10%;
     content: "";
 }
