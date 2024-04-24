@@ -1,0 +1,11 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+ul, ol, li { list-style: none; }
+a { text-decoration: none; color: inherit; }
+address, em, i { font-style: normal; }
+h1, h2, h3, h4, h5, h6, strong, th { font-size: inherit; font-weight: inherit; }
+input, button, select { color: inherit; font-family: inherit; font-size: inherit; }
+button { background-color: transparent; border: 0; color: inherit; font-family: inherit; font-size: inherit; cursor: pointer; }
+table { border-collapse: collapse; border: 0; }
+table caption { display: none; }
+fieldset { border: 0; }
+legend { display: none; }
