@@ -51,35 +51,14 @@ $(document).ready(function(){
         $("html, body").css({overflow : "visible", height : "auto"}).unbind('scroll touchmove mousewheel');
     })
 
-    let windowW
-    let visualW
-    function visual_chk(){
-        windowW = $(window).width()
-        $('.visual .swiper').width(visualW)
-        if(windowW > 1500){
-            visualW = windowW - (windowW/2 -640)
-        }else{
-            visualW = windowW - 100
-        }
-        console.log(windowW, visualW)
-    }
-    visual_chk()
-    $(window).resize(function(){
-        visual_chk()
-    })
-
-
-
-
-
 
     const visual_swiper = new Swiper('.visual .swiper', { /* 팝업을 감싼는 요소의 class명 */
-
+	slidesPerView: 1, /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
+	spaceBetween: 20, /* 팝업과 팝업 사이 여백 */
 	autoplay: {  /* 팝업 자동 실행 */
 		delay: 3000,
 		disableOnInteraction: true,
 	},
-
 	loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
 
 	pagination: {  /* 몇개의 팝업이 있는지 보여주는 동그라미 */
