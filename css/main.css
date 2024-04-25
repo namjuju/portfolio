@@ -185,6 +185,21 @@ header ul li a:hover {
     opacity: 1;
     background-color: #333;
 }
+@media screen and (max-width:1200px) {
+    header {
+        height: 100px;
+    }
+    header ul li a {
+        line-height: 100px;
+    }
+    .container {
+        margin-top: 100px;
+        height: calc(100vh - 100px);
+    }
+    .swiper .pagination {
+        bottom: 0;
+    }
+}
 .profile {
     position: relative;
     height: calc(100vh - 150px);
@@ -258,17 +273,17 @@ header ul li a:hover {
 .project1 .bus {
     display: flex;
     justify-content: space-evenly;
-    margin: 0 0 10vh 0;
+    margin: 5vh 0;
+    align-items: flex-start;
 }
 .project1 .bus .bus_txt {
-    margin-right: 50px;
+    margin-right: 20px;
 }
 .project1 .bus .bus_txt h2 {
     font-size: 100px;
     color: #7DA432;
     font-weight: 700;
     margin-bottom: 70px;
-    margin-top: 20px;
 }
 .project1 .bus .bus_txt > strong {
     font-size: 25px;
@@ -301,14 +316,15 @@ header ul li a:hover {
 }
 .bus .bus_mockup .device_img {
     position: relative;
-    padding: 50px 0 0 100px;
+    padding: 5vh 3vw;
     z-index: 2;
+    width: 750px;
 }
-.bus .bus_mockup .bus_img{
+.bus .bus_mockup .bus_img {
     position: absolute;
-    left: 53px;
-    bottom: -52px;
-    width: 263px;
+    left: 61px;
+    bottom: -27px;
+    width: 250px;
     z-index: 5;
 }
 .bus_img { 
@@ -325,14 +341,14 @@ header ul li a:hover {
 .bus .bus_mockup .tree_img {
     position: absolute;
     left: -24px;
-    bottom: 0;
-    width: 147px;
+    bottom: 33px;
+    width: 138px;
     z-index: 3;
 }
 .bus .bus_mockup .cloud1_img {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -6px;
     width: 243px;
     z-index: 1;
 }
@@ -350,9 +366,9 @@ header ul li a:hover {
 }
 .bus .bus_mockup .cloud2_img {
     position: absolute;
-    left: 79px;
-    top: 296px;
-    width: 113px;
+    left: 100px;
+    top: 285px;
+    width: 110px;
     z-index: 4;
 }
 .cloud2_img { 
@@ -369,12 +385,129 @@ header ul li a:hover {
 .bus .bus_mockup .shadow {
     position: absolute;
     left: 0;
-    bottom: 1px;
+    bottom: 69px;
     width: 105%;
     height: 7px;
     filter: blur(20px);
     opacity: 0.5;
     z-index: 1;
+}
+@media screen and (max-width:1600px) {
+    .project1 .bus {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:1400px) {
+    .project1 .bus .bus_txt h2 {
+        font-size: 80px;
+        margin-bottom: 0;
+    }
+    .project1 .bus .bus_txt > strong {
+        font-size: 23px;
+        margin: 40px 0 10px 0;
+    }
+    .project1 .bus .bus_txt > p {
+        font-size: 18px;
+        margin-bottom: 37px;
+    }
+    .project1 .bus .bus_txt .box span {
+        width: 135px;
+    }
+    .bus .bus_mockup .device_img {
+        padding: 5vh 3vw;
+        width: 640px;
+    }
+    .bus .bus_mockup .tree_img {
+        left: -20px;
+        bottom: 31px;
+        width: 110px;
+    }
+    .bus .bus_mockup .bus_img {
+        left: 60px;
+        bottom: 0px;
+        width: 199px;
+    }
+    .bus .bus_mockup .cloud2_img {
+        left: 23px;
+        top: 248px;
+        width: 96px;
+    }
+    .bus .bus_mockup .cloud1_img {
+        left: 0;
+        top: -6px;
+        width: 210px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .bus .bus_mockup .device_img {
+        width: 570px;
+    }
+    .bus .bus_mockup .cloud1_img {
+        left: 0;
+        top: -6px;
+        width: 193px;
+    }
+    .bus .bus_mockup .cloud2_img {
+        left: 23px;
+        top: 240px;
+        width: 92px;
+    }
+    .bus .bus_mockup .tree_img {
+        left: -18px;
+        bottom: 37px;
+        width: 100px;
+    }
+    .bus .bus_mockup .bus_img {
+        left: 44px;
+        bottom: 5px;
+        width: 177px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .project1 .bus .bus_txt h2 {
+        font-size: 55px;
+    }
+    .project1 .bus .bus_txt > strong {
+        font-size: 20px;
+        margin: 30px 0 5px 0;
+    }
+    .project1 .bus .bus_txt > span {
+        font-size: 20px;
+        line-height: 2.5;
+    }
+    .project1 .bus .bus_txt > p {
+        font-size: 15px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+    .project1 .bus .bus_txt .box {
+        font-size: 15px;
+    }
+    .bus .bus_mockup .device_img {
+        width: 440px;
+        padding: 4vh 2vw;
+    }
+    .bus .bus_mockup .tree_img {
+        left: -21px;
+        bottom: 37px;
+        width: 71px;
+    }
+    .bus .bus_mockup .bus_img {
+        left: 18px;
+        bottom: 5px;
+        width: 147px;
+    }
+    .bus .bus_mockup .cloud2_img {
+        left: 20px;
+        top: 174px;
+        width: 67px;
+    }
+    .bus .bus_mockup .cloud1_img {
+        left: 0;
+        top: -6px;
+        width: 177px;
+    }
 }
 
 .wj_link {
@@ -387,8 +520,11 @@ header ul li a:hover {
 .project2 .kid {
     display: flex;
     justify-content: space-around;
-    margin: 0 0 5vh 0;
-    align-items: flex-end;
+    margin: 5vh 0;
+    align-items: flex-start;
+}
+.project2 .kid .kid_txt {
+    margin-right: 20px;
 }
 .project2 .kid .kid_txt h2 {
     font-size: 70px;
@@ -432,22 +568,22 @@ header ul li a:hover {
 }
 .kid .kid_mockup .device_img {
     position: relative;
-    padding-top: 135px;
-    width: 770px;
+    padding-top: 165px;
+    width: 700px;
     z-index: 2;
 }
 .kid .kid_mockup .pink_img {
     position: absolute;
-    left: -142px;
+    left: -113px;
     bottom: -16px;
-    width: 200px;
+    width: 160px;
     z-index: 3;
 }
 .kid .kid_mockup .pink_balloon2_img {
     position: absolute;
-    left: -204px;
-    bottom: 27px;
-    width: 143px;
+    left: -159px;
+    bottom: 17px;
+    width: 113px;
     z-index: 5;
 }
 .kid .kid_mockup .pink_balloon2_img { 
@@ -463,9 +599,9 @@ header ul li a:hover {
 }
 .kid .kid_mockup .pink_balloon1_img {
     position: absolute;
-    left: -151px;
-    bottom: 96px;
-    width: 87px;
+    left: -118px;
+    bottom: 66px;
+    width: 74px;
     z-index: 4;
 }
 .kid .kid_mockup .pink_balloon1_img { 
@@ -481,9 +617,9 @@ header ul li a:hover {
 }
 .kid .kid_mockup .pink_letter_img {
     position: absolute;
-    left: -70px;
-    top: 333px;
-    width: 40px;
+    left: -58px;
+    top: 394px;
+    width: 37px;
     z-index: 7;
 }
 .kid .kid_mockup .pink_letter_img { 
@@ -499,9 +635,9 @@ header ul li a:hover {
 }
 .kid .kid_mockup .pink_letterWings_img {
     position: absolute;
-    left: -100px;
-    top: 324px;
-    width: 93px;
+    left: -87px;
+    top: 386px;
+    width: 90px;
     z-index: 6;
 }
 .kid .kid_mockup .pink_letterWings_img { 
@@ -526,9 +662,9 @@ header ul li a:hover {
 }
 .kid .kid_mockup .blue_balloon2_img {
     position: absolute;
-    right: -26px;
-    bottom: 61px;
-    width: 135px;
+    right: -11px;
+    bottom: 62px;
+    width: 110px;
     z-index: 5;
 }
 .kid .kid_mockup .blue_balloon2_img { 
@@ -544,9 +680,9 @@ header ul li a:hover {
 }
 .kid .kid_mockup .blue_balloon1_img {
     position: absolute;
-    right: 24px;
-    bottom: 96px;
-    width: 85px;
+    right: 30px;
+    bottom: 86px;
+    width: 71px;
     z-index: 4;
 }
 .kid .kid_mockup .blue_balloon1_img { 
@@ -562,18 +698,6 @@ header ul li a:hover {
     90% { transform:translate(0, -50px,); opacity: 1; }
     100% { transform:translate(0, -90px); opacity: 0; }
 }
-/*.kid .kid_mockup .blue_letter {
-    offset-path: path('M254.5 92C254.5 117.204 240.343 140.067 217.364 156.648C194.385 173.229 162.615 183.5 127.5 183.5C92.3852 183.5 60.6152 173.229 37.6365 156.648C14.657 140.067 0.5 117.204 0.5 92C0.5 66.796 14.657 43.9329 37.6365 27.3516C60.6152 10.7709 92.3852 0.5 127.5 0.5C162.615 0.5 194.385 10.7709 217.364 27.3516C240.343 43.9329 254.5 66.796 254.5 92Z');
-    animation-name: letter_move;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;*/
-
-/*@keyframes letter_move {
-    0% { offset-distance: 0%; }
-    100% { offset-distance: 100%; }
-}  옵셋패스 원모양 등 원하는 모양으로 애니메이션*/
-
 .kid .kid_mockup .blue_letter { 
     animation-name:animate_blue_letters; 
     animation-duration:7s; 
@@ -624,6 +748,191 @@ header ul li a:hover {
     0% { transform:translate(0, 0)  }
     50% { transform:translate(0, 4px)  }
     100% { transform:translate(0, 0)  }
+}
+@media screen and (max-width:1600px) {
+    .project2 .kid {
+        display: flex;
+        justify-content: space-between;
+    }
+    .kid .kid_mockup .device_img {
+        padding-top: 190px;
+        width: 630px;
+    }
+    .kid .kid_mockup .blue_img {
+        right: 0px;
+        bottom: -30px;
+        width: 193px;
+    }
+    .kid .kid_mockup .blue_balloon2_img {
+        right: -11px;
+        bottom: 52px;
+        width: 96px;
+    }
+    .kid .kid_mockup .pink_img {
+        left: -67px;
+        bottom: -17px;
+        width: 122px;
+    }
+    .kid .kid_mockup .pink_balloon2_img {
+        left: -105px;
+        bottom: 7px;
+        width: 87px;
+    }
+    .kid .kid_mockup .pink_balloon1_img {
+        left: -74px;
+        bottom: 43px;
+        width: 58px;
+    }
+    .kid .kid_mockup .pink_letter_img {
+        left: -20px;
+        top: 404px;
+        width: 30px;
+    }
+    .kid .kid_mockup .pink_letterWings_img {
+        left: -44px;
+        top: 397px;
+        width: 73px;
+    }
+    .kid .kid_mockup .blue_balloon1_img {
+        right: 25px;
+        bottom: 86px;
+        width: 60px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .project2 .kid .kid_txt h2 {
+        font-size: 60px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .project2 .kid .kid_txt > strong {
+        font-size: 20px;
+        margin: 30px 0 15px 0;
+    }
+    .project2 .kid .kid_txt > p {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+    .project2 .kid .kid_txt .box span {
+        width: 130px;
+    }
+    .kid .kid_mockup .device_img {
+        padding-top: 133px;
+        width: 530px;
+    }
+    .kid .kid_mockup .blue_img {
+        right: 0px;
+        bottom: -30px;
+        width: 182px;
+    }
+    .kid .kid_mockup .blue_balloon2_img {
+        right: -4px;
+        bottom: 46px;
+        width: 82px;
+    }
+    .kid .kid_mockup .blue_balloon1_img {
+        right: 27px;
+        bottom: 70px;
+        width: 54px;
+    }
+    .kid .kid_mockup .blue_letter_img {
+        right: 128px;
+        top: 114px;
+        width: 43px;
+    }
+    .kid .kid_mockup .blue_letterWings_img {
+        right: 104px;
+        top: 104px;
+        width: 87px;
+    }
+    .kid .kid_mockup .pink_img {
+        left: -57px;
+        bottom: -22px;
+        width: 104px;
+    }
+    .kid .kid_mockup .pink_balloon2_img {
+        left: -92px;
+        bottom: -1px;
+        width: 79px;
+    }
+    .kid .kid_mockup .pink_balloon1_img {
+        left: -64px;
+        bottom: 41px;
+        width: 51px;
+    }
+    .kid .kid_mockup .pink_letter_img {
+        left: -20px;
+        top: 327px;
+        width: 29px;
+    }
+    .kid .kid_mockup .pink_letterWings_img {
+        left: -41px;
+        top: 320px;
+        width: 66px;
+    }
+    .project2 .kid .kid_txt > span {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1150px) {
+    .project2 .kid .kid_txt h2 {
+        font-size: 50px;
+    }
+    .project2 .kid .kid_txt > p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .project2 .kid .kid_txt > strong {
+        font-size: 20px;
+        margin: 50px 0 15px 0;
+    }
+    .project2 .kid .kid_txt > span {
+        font-size: 18px;
+    }
+    .kid .kid_mockup .device_img {
+        padding-top: 141px;
+        width: 480px;
+    }
+    .kid .kid_mockup .blue_img {
+        right: 0px;
+        bottom: -30px;
+        width: 155px;
+    }
+    .kid .kid_mockup .blue_balloon2_img {
+        right: -6px;
+        bottom: 37px;
+        width: 74px;
+    }
+    .kid .kid_mockup .blue_balloon1_img {
+        right: 19px;
+        bottom: 59px;
+        width: 49px;
+    }
+    .kid .kid_mockup .pink_img {
+        left: -44px;
+        bottom: -22px;
+        width: 96px;
+    }
+    .kid .kid_mockup .pink_balloon2_img {
+        left: -73px;
+        bottom: -2px;
+        width: 65px;
+    }
+    .kid .kid_mockup .pink_balloon1_img {
+        left: -53px;
+        bottom: 30px;
+        width: 44px;
+    }
+    .kid .kid_mockup .blue_letter_img {
+        right: 128px;
+        top: 114px;
+        width: 38px;
+    }
+    .kid .kid_mockup .blue_letterWings_img {
+        right: 110px;
+        top: 107px;
+        width: 77px;
+    }
 }
 .end {
     position: relative;
