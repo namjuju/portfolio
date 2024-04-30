@@ -835,7 +835,7 @@
 
 .news {
     height: 700px;
-    background: linear-gradient(180deg, rgb(127 207 174 / 97%), rgb(166 211 189));
+    background: linear-gradient(90deg, #90c79b, rgb(128 186 165));
 }
 .news .wrapper {
     position: relative;

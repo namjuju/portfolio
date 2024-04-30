@@ -1713,6 +1713,11 @@ background-color: #4BBF6B;
     width: 49%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.data .data_inner ul li a:hover img {
+    transform: translate(-50%, -50%) scale3d(1.15, 1.15, 1);
 }
 .data .data_inner ul li a p {
     margin-top: 10px;
