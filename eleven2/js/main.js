@@ -93,6 +93,11 @@ $(document).ready(function(){
     })
 
 
+
+    $('.event .depth3 > li').on('click', function(){
+        $('.event .depth3 > li').removeClass('active')
+        $(this).addClass('active')
+    })
     const event_swiper = new Swiper('.event .swiper1', { /* 팝업을 감싼는 요소의 class명 */
         slidesPerView: 3, /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
         spaceBetween: 0, /* 팝업과 팝업 사이 여백 */

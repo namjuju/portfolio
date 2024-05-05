@@ -338,6 +338,7 @@
 .event{
     width: 100%;
     height: 430px; 
+    margin-top: 100px;
 }
 .event .wrapper {
     position: relative;
@@ -346,43 +347,133 @@
     font-size: 40px;
     font-weight: 700
 }
-.event .depth1 > li > button {
+.event .more {
+    margin: 22px 0 35px 0;
+}
+.event .more a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+}
+.event .more a:hover {
+    color: #F7A158;
+}
+.event .more a::before {
+    position: absolute;
+    right: -33px;
+    top: -2px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 26px auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13' cy='13' r='13' fill='%23F7A158'/%3E%3Cpath d='M7 15C6.45 15 5.97917 14.8042 5.5875 14.4125C5.19583 14.0208 5 13.55 5 13C5 12.45 5.19583 11.9792 5.5875 11.5875C5.97917 11.1958 6.45 11 7 11C7.55 11 8.02083 11.1958 8.4125 11.5875C8.80417 11.9792 9 12.45 9 13C9 13.55 8.80417 14.0208 8.4125 14.4125C8.02083 14.8042 7.55 15 7 15ZM13 15C12.45 15 11.9792 14.8042 11.5875 14.4125C11.1958 14.0208 11 13.55 11 13C11 12.45 11.1958 11.9792 11.5875 11.5875C11.9792 11.1958 12.45 11 13 11C13.55 11 14.0208 11.1958 14.4125 11.5875C14.8042 11.9792 15 12.45 15 13C15 13.55 14.8042 14.0208 14.4125 14.4125C14.0208 14.8042 13.55 15 13 15ZM19 15C18.45 15 17.9792 14.8042 17.5875 14.4125C17.1958 14.0208 17 13.55 17 13C17 12.45 17.1958 11.9792 17.5875 11.5875C17.9792 11.1958 18.45 11 19 11C19.55 11 20.0208 11.1958 20.4125 11.5875C20.8042 11.9792 21 12.45 21 13C21 13.55 20.8042 14.0208 20.4125 14.4125C20.0208 14.8042 19.55 15 19 15Z' fill='white'/%3E%3C/svg%3E%0A");
+    width: 26px;
+    height: 26px;
+    content: "";
+}
+.event .depth3 > li > button {
     position: relative;
     display: block;
     font-size: 20px;
     width: 299px;
     height: 55px;
-    background-color: #9e1010;
+    background-color: #FFF;
+    border-radius: 0;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
 }
-.event .depth1 > li .swiper {
+.event .depth3 > li.active > button {
+    background-color: #F7A158;
+    color: #FFF;
+    border-radius: 0 30px 30px 30px;
+}
+.event .depth3 > li .swiper {
     position: absolute;
     right: 0;
     top: 0;
     width: calc(100% - 327px);
     display: none;
 }
-.event .depth1 > li.active .swiper {
+.event .depth3 > li.active .swiper {
     display: block;
 }
-.event .depth1 > li .swiper ul {
+.event .depth3 > li .swiper ul {
     display: flex;
     justify-content: space-between;
 }
-.event .depth1 > li .swiper ul li {
+.event .depth3 > li .swiper ul li {
     text-align: center;
 }
-.event .depth1 > li .swiper ul li a {
+.event .depth3 > li .swiper ul li a {
     display: block;
 }
-.event .depth1 > li .swiper ul li a .imginner {
+.event .depth3 > li .swiper ul li a .imginner {
     display: block;
-    height: 305px;
+    height: 300px;
     overflow: hidden;
     border-radius: 20px;
     border: 1px solid #999;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
 }
-.event .depth1 > li .swiper ul li a .imginner img {
+.event .depth3 > li .swiper ul li a:hover .imginner {
+    border: 5px solid #F7A158;
+}
+.event .depth3 > li .swiper ul li a .imginner img {
     width: 100%;
     height: 100%;
+    transform: scale3d(1.07, 1.07, 1);
     object-fit: contain;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+}
+.event .depth3 > li .swiper ul li a:hover .imginner img {
+    transform: scale3d(1.17, 1.17, 1);
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+}
+
+.event .depth3 > li .swiper ul li a .one,
+.event .depth3 > li .swiper ul li a .two,
+.event .depth3 > li .swiper ul li a .dis {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #F7A158;
+    color: #FFF;
+    padding: 6px 15px 2px 15px;
+    border-radius: 20px;
+}
+.event .depth3 > li .swiper ul li a .new {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #f3cd0d;
+    color: #FFF;
+    padding: 5px 15px 3px 15px;
+    border-radius: 20px;
+}
+.event .depth3 > li .swiper ul li a strong {
+    display: block;
+    margin: 24px 0 10px 0;
+    font-weight: 500;
+    word-break: normal;
+    height: 37px;
+}
+.event .depth3 > li .swiper ul li a .won {
+    display: block;
+    color: #F7A158;
+    font-weight: 500;
+}
+.event .depth3 > li .pagination {
+    position: absolute;
+    bottom: -65%;
+    left: 50%;
+    display: none;
+    z-index: 90;
+}
+.event .depth3 > li.active .pagination {
+    display: block;
 }

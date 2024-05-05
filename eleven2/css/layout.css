@@ -97,7 +97,7 @@ header .gnb .depth1 > li > a {
     transition-timing-function: ease-in-out;
 }
 header .gnb .depth2 {
-    padding: 15px 0 0 0; 
+    padding: 15px 0 10px 0; 
     display: none;
     border-radius:  0 0 20px 20px;
     background-color: #FFF;
