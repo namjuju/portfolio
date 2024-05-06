@@ -338,7 +338,7 @@
 .event{
     width: 100%;
     height: 430px; 
-    margin-top: 100px;
+    margin: 100px 0 100px 0;
 }
 .event .wrapper {
     position: relative;
@@ -411,7 +411,7 @@
 }
 .event .depth3 > li .swiper ul li a .imginner {
     display: block;
-    height: 300px;
+    height: 270px;
     overflow: hidden;
     border-radius: 20px;
     border: 1px solid #999;
@@ -424,7 +424,7 @@
 .event .depth3 > li .swiper ul li a .imginner img {
     width: 100%;
     height: 100%;
-    transform: scale3d(1.07, 1.07, 1);
+    transform: scale3d(1, 1, 1);
     object-fit: contain;
     transition-duration: 150ms;
     transition-timing-function: ease-in-out;
@@ -469,11 +469,172 @@
 }
 .event .depth3 > li .pagination {
     position: absolute;
-    bottom: -65%;
+    bottom: -50%;
     left: 50%;
     display: none;
     z-index: 90;
 }
 .event .depth3 > li.active .pagination {
     display: block;
+}
+.event .swiper-pagination-bullet-active {
+    background: #444;
+}
+
+.app .appinner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.app .appinner a {
+    display: block;
+}
+.app .appinner a span {
+    position: absolute;
+    right: 250px;
+    bottom: 70px;
+    color: #5C43E6;
+    font-weight: 500;
+    font-size: 25px;
+    background-color: #FFF;
+    padding: 10px 90px 5px 67px;
+    border-radius: 30px;
+
+}
+.app .appinner a span::after {
+    position: absolute;
+    right: 55px;
+    bottom: 13px;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 14.4688C9.83333 14.4688 9.67708 14.4427 9.53125 14.3906C9.38542 14.3385 9.25 14.25 9.125 14.125L4.625 9.625C4.375 9.375 4.25521 9.08333 4.26562 8.75C4.27604 8.41667 4.39583 8.125 4.625 7.875C4.875 7.625 5.17188 7.49479 5.51562 7.48438C5.85938 7.47396 6.15625 7.59375 6.40625 7.84375L8.75 10.1875V1.25C8.75 0.895833 8.86979 0.598958 9.10938 0.359375C9.34896 0.119792 9.64583 0 10 0C10.3542 0 10.651 0.119792 10.8906 0.359375C11.1302 0.598958 11.25 0.895833 11.25 1.25V10.1875L13.5938 7.84375C13.8438 7.59375 14.1406 7.47396 14.4844 7.48438C14.8281 7.49479 15.125 7.625 15.375 7.875C15.6042 8.125 15.724 8.41667 15.7344 8.75C15.7448 9.08333 15.625 9.375 15.375 9.625L10.875 14.125C10.75 14.25 10.6146 14.3385 10.4688 14.3906C10.3229 14.4427 10.1667 14.4688 10 14.4688ZM2.5 20C1.8125 20 1.22396 19.7552 0.734375 19.2656C0.244792 18.776 0 18.1875 0 17.5V15C0 14.6458 0.119792 14.349 0.359375 14.1094C0.598958 13.8698 0.895833 13.75 1.25 13.75C1.60417 13.75 1.90104 13.8698 2.14062 14.1094C2.38021 14.349 2.5 14.6458 2.5 15V17.5H17.5V15C17.5 14.6458 17.6198 14.349 17.8594 14.1094C18.099 13.8698 18.3958 13.75 18.75 13.75C19.1042 13.75 19.401 13.8698 19.6406 14.1094C19.8802 14.349 20 14.6458 20 15V17.5C20 18.1875 19.7552 18.776 19.2656 19.2656C18.776 19.7552 18.1875 20 17.5 20H2.5Z' fill='%235C43E6'/%3E%3C/svg%3E%0A");
+}
+.app .appinner a span:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+} 
+
+.discount {
+    margin: 100px 0;
+}
+.discount h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.discount .more {
+    text-align: right;
+}
+.discount .more a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    margin-right: 33px;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+}
+.discount .more a:hover {
+    color: #00903B;
+}
+.discount .more a::before {
+    position: absolute;
+    right: -33px;
+    top: -2px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 26px auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13' cy='13' r='13' fill='%2300903B'/%3E%3Cpath d='M7 15C6.45 15 5.97917 14.8042 5.5875 14.4125C5.19583 14.0208 5 13.55 5 13C5 12.45 5.19583 11.9792 5.5875 11.5875C5.97917 11.1958 6.45 11 7 11C7.55 11 8.02083 11.1958 8.4125 11.5875C8.80417 11.9792 9 12.45 9 13C9 13.55 8.80417 14.0208 8.4125 14.4125C8.02083 14.8042 7.55 15 7 15ZM13 15C12.45 15 11.9792 14.8042 11.5875 14.4125C11.1958 14.0208 11 13.55 11 13C11 12.45 11.1958 11.9792 11.5875 11.5875C11.9792 11.1958 12.45 11 13 11C13.55 11 14.0208 11.1958 14.4125 11.5875C14.8042 11.9792 15 12.45 15 13C15 13.55 14.8042 14.0208 14.4125 14.4125C14.0208 14.8042 13.55 15 13 15ZM19 15C18.45 15 17.9792 14.8042 17.5875 14.4125C17.1958 14.0208 17 13.55 17 13C17 12.45 17.1958 11.9792 17.5875 11.5875C17.9792 11.1958 18.45 11 19 11C19.55 11 20.0208 11.1958 20.4125 11.5875C20.8042 11.9792 21 12.45 21 13C21 13.55 20.8042 14.0208 20.4125 14.4125C20.0208 14.8042 19.55 15 19 15Z' fill='white'/%3E%3C/svg%3E%0A");
+    width: 26px;
+    height: 26px;
+    content: "";
+}
+.discount .swiper {
+    margin-top: 30px;
+}
+.discount .swiper ul li a {
+    display: block;
+    height: 305px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+}
+.discount .swiper ul li a::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #ECECEC;
+    border-radius: 20px 0 20px 0;
+    width: 50%;
+    height: 51px;
+    content: "";
+    z-index: -1;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+}
+.discount .swiper ul li a:hover {
+    border: 5px solid #00903B;
+}
+.discount .swiper ul li a:hover:before {
+    background-color: #00903B;
+}
+
+.discount .swiper ul li a img {
+    width: 190px;
+    height: auto;
+    margin-top: 13px;
+    transform: scale3d(1, 1, 1);
+    object-fit: contain;
+}
+.discount .swiper ul li a strong {
+    display: block;
+    height: 39px;
+    font-weight: 500;
+    word-break: normal;
+}
+.discount .swiper ul li a .amount {
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+}
+.discount .swiper ul li a .amount span {
+    font-weight: 500;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+}
+.discount .swiper ul li a:hover .amount span {
+    color: #FFF;
+}
+.discount .dis_btn {
+    margin: 60px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discount .dis_btn .pagination {
+    width: 80px;
+}
+.discount .dis_btn button {
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    border: 1px solid #FFF;
+    font-size: 0;
+    line-height: 0;
+    margin-right: 5px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.discount .dis_btn button.prev {
+    background-size: 9px auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.19507 7.5L8.4417 12.7466C8.68834 12.9933 8.81166 13.3072 8.81166 13.6883C8.81166 14.0695 8.68834 14.3834 8.4417 14.63C8.19507 14.8767 7.88117 15 7.5 15C7.11883 15 6.80493 14.8767 6.5583 14.63L0.369955 8.4417C0.235426 8.30717 0.140135 8.16144 0.0840807 8.00448C0.0280269 7.84753 0 7.67937 0 7.5C0 7.32063 0.0280269 7.15247 0.0840807 6.99552C0.140135 6.83856 0.235426 6.69282 0.369955 6.5583L6.5583 0.369955C6.80493 0.123318 7.11883 0 7.5 0C7.88117 0 8.19507 0.123318 8.4417 0.369955C8.68834 0.616592 8.81166 0.930493 8.81166 1.31166C8.81166 1.69283 8.68834 2.00673 8.4417 2.25336L3.19507 7.5Z' fill='%23333333'/%3E%3C/svg%3E%0A");
+}
+.discount .dis_btn button.next {
+    background-size: 9px auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.61646 7.5L0.369819 2.25336C0.123182 2.00673 -0.000136585 1.69283 -0.000136618 1.31166C-0.000136652 0.930494 0.123182 0.616593 0.369818 0.369957C0.616455 0.123319 0.930357 1.64267e-06 1.31152 1.60935e-06C1.69269 1.57602e-06 2.00659 0.123319 2.25323 0.369957L8.44157 6.5583C8.5761 6.69283 8.67139 6.83856 8.72744 6.99552C8.7835 7.15247 8.81152 7.32063 8.81152 7.5C8.81152 7.67937 8.7835 7.84753 8.72744 8.00448C8.67139 8.16144 8.5761 8.30718 8.44157 8.4417L2.25323 14.63C2.00659 14.8767 1.69269 15 1.31152 15C0.930358 15 0.616456 14.8767 0.36982 14.63C0.123183 14.3834 -0.000135503 14.0695 -0.000135536 13.6883C-0.00013557 13.3072 0.123183 12.9933 0.369819 12.7466L5.61646 7.5Z' fill='%23333333'/%3E%3C/svg%3E%0A");
 }
