@@ -145,12 +145,9 @@ $(document).ready(function(){
         slidesPerView: "auto", /* li의 넓이 비율로 안함 - css에서 준 넓이대로 함 */
         spaceBetween: 16, /* li와 li사이 - 제일 작은 여백 */
         breakpoints: {
-            640: {  /* 640px 이상이 되면 적용 */
-                spaceBetween: 30, 
-            },
             1024: {  /* 1024px 이상이 되면 적용 */
                 slidesPerView: "8", /* li의 넓이 비율로 안함 - css에서 준 넓이대로 함 */
-                spaceBetween: 40,
+                spaceBetween: 20,
             },
         },
         navigation: {
