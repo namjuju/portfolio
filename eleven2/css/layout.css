@@ -306,7 +306,7 @@ footer .wrapper {
 footer .f_top {
     background-color: #333;
     color: #FFF;
-    padding: 30px;
+    padding: 30px 0;
 }
 footer .f_top .f_list > ul {
     display: flex;
@@ -329,7 +329,7 @@ footer .f_top .f_list > ul > li > ul > li > a {
 footer .f_top .family_site {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 14px;
 }
 footer .f_top .family_site ul {
     display: none;
@@ -354,7 +354,7 @@ footer .f_top .family_site ul li a:hover {
 }
 footer .f_top .family_site .open,
 footer .f_top .family_site .close {
-    padding: 5px 77px 5px 20px;
+    padding: 17px 77px 15px 35px;
     display: block;
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 40px;
@@ -366,8 +366,8 @@ footer .f_top .family_site .close {
 footer .f_top .family_site .open::after,
 footer .f_top .family_site .close::after {
     position: absolute;
-    right: 20px;
-    top: 11px;
+    right: 36px;
+    top: 21px;
     width: 10px;
     height: 10px;
     content: "";
@@ -389,4 +389,18 @@ footer .f_top .family_site.on .close {
 }
 footer .f_top .family_site.on ul {
     display: block;
+}
+
+.f_bottom {
+    background-color: #F0F0F0;
+    padding: 30px 0;
+    line-height: 2;
+}
+.f_bottom .f_depth1 {
+    display: flex;
+}
+.f_bottom .f_depth2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
 }
