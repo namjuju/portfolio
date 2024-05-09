@@ -165,6 +165,17 @@ header ul li a:hover {
     font-size: 23px;
     font-weight: 700
 } 
+.swiper .home .visual img.main_scroll{
+    animation-name:animate_ex1; 
+    animation-duration:5s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear; 
+}
+@keyframes animate_ex1{
+0% {transform:translate(0, 0);}
+50% {transform:translate(0, 30px);}
+100% {transform:translate(0, 0);}
+}
 .swiper .home .visual .subtxt {
     position: absolute;
     top: 137px;
@@ -233,9 +244,15 @@ header ul li a:hover {
     margin: 40px;
     border-radius: 100%;
     overflow: hidden;  
+    transform: translate(0, 0);
+    transition: transform 0.3s ease-in-out;
 }
 .profile .profile_left .poto img {
     width: 250px;
+}
+.profile .profile_left .poto:hover {
+    transform: translate(-5px, -5px);
+    transition-duration: 0.3s;
 }
 .profile .profile_left .profile_txt {
     font-size: 20px;
@@ -269,6 +286,10 @@ header ul li a:hover {
 }
 .profile .profile_right .sub_txt span {
     font-weight: 500;
+}
+.profile .profile_right .sub_txt:hover,
+.profile .profile_right .sub_txt:hover span {
+    font-weight: 700;
 }
 .project1 .bus {
     display: flex;
@@ -951,6 +972,17 @@ header ul li a:hover {
     position: absolute;
     left: calc(50% - 450px);
     top: 0;
+}
+.end .end_inner img.main2_scroll{
+    animation-name:animate_ex2; 
+    animation-duration:5s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear; 
+}
+@keyframes animate_ex2{
+0% {transform:translate(0, 0);}
+50% {transform:translate(0, -20px);}
+100% {transform:translate(0, 0);}
 }
 .end .end_inner h2 {
     font-size: 23px;
