@@ -781,10 +781,26 @@
     border-radius: 20px;
     width: calc(25% - 10px);
     text-align: center;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.startups .start_icon ul li:nth-child(1):hover {
+    background-color: #ebfff3;
+}
+.startups .start_icon ul li:nth-child(2):hover {
+    background-color: #ebf4ff;
+}
+.startups .start_icon ul li:nth-child(3):hover {
+    background-color: #fff5f5;
+}
+.startups .start_icon ul li:nth-child(4):hover {
+    background-color: #fffced;
 }
 .startups .start_icon ul li a {
  display: block;
  position: relative;
+ transition-duration: 300ms;
+ transition-timing-function: ease-in-out;
 }
 .startups .start_icon ul li a::before {
     position: absolute;
@@ -795,6 +811,8 @@
     border-radius: 100%;
     content: "";
     z-index: 1;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
 }
 .startups .start_icon ul li:nth-child(1) a::before {
     background-color: #5FE197;
@@ -807,6 +825,9 @@
 }
 .startups .start_icon ul li:nth-child(4) a::before {
     background-color: #EEB100;
+}
+.startups .start_icon ul li a:hover:before {
+    opacity: 0.8;
 }
 .startups .start_icon ul li a::after {
     position: absolute;
@@ -822,7 +843,15 @@
     content: "";
 }
 .startups .start_icon ul li a img {
-    padding: 30px;
+    width: 200px;
+    height: auto;
+    padding: 30px 20px 20px 20px;
+    transform: scale3d(1, 1, 1);
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.startups .start_icon ul li a:hover img {
+    transform: scale3d(1.1, 1.1, 1);
 }
 .startups .start_icon ul li a .txt {
     display: flex;
@@ -863,4 +892,91 @@
 .startups .start_icon ul li a .txt i::after  {
     left: -37px;
     bottom: -2px;
+}
+
+.brand {
+    position: relative;
+}
+.brand .brand_bg {
+    width: 100vw;
+    height: 590px;
+}
+.brand .brand_bg img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.brand .brand_img img {
+    position: absolute;
+}
+.brand .brand_img img.cloud01 {
+    right: 37vw;
+    top: 55px;
+    width: 130px;
+}
+.brand .brand_img img.cloud01 { 
+    animation-name:animate_cloud01; 
+    animation-duration:10s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear 
+}
+@keyframes animate_cloud01 {
+    0% { transform:translate(0, 0); }
+    50% { transform:translate(50px, 0); }
+    100% { transform:translate(0px, 0); }
+}
+.brand .brand_img img.cloud02 {
+    right: 15vw;
+    top: 130px;
+    width: 100px;
+}
+.brand .brand_img img.cloud02 { 
+    animation-name:animate_cloud02; 
+    animation-duration:10s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear 
+}
+@keyframes animate_cloud02 {
+    0% { transform:translate(0, 0); }
+    50% { transform:translate(50px, 0); }
+    100% { transform:translate(0px, 0); }
+}
+.brand .brand_img img.cloud03 {
+    right: 49vw;
+    top: 33px;
+    width: 200px;
+}
+.brand .brand_img img.cloud04 {
+    right: 49vw;
+    top: 33px;
+    width: 200px;
+    opacity: 1;
+}
+.brand .brand_img img.cloud04 { 
+    animation-name:animate_cloud04; 
+    animation-duration:5s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear 
+}
+@keyframes animate_cloud04 {
+0% { opacity: 1; }
+50% { opacity: 0; }
+100% { opacity: 1; }
+}
+.brand .brand_txt {
+    position: absolute;
+    left: 10vw;
+    top: 251px;
+    width: 35%;
+}
+.brand .brand_txt h2 {
+    font-size: 33px;
+    font-weight: 700;
+}
+.brand .brand_txt h2 span {
+    color: #ed0102;
+}
+.brand .brand_txt p {
+    margin-top: 20px;
+    font-size: 25px;
 }

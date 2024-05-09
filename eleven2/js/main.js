@@ -160,4 +160,11 @@ $(document).ready(function(){
         },
     });
 
+    $('footer .f_top .family_site .open').on('click', function(){
+        $('footer .family_site').addClass('on')
+    })
+    $('footer .f_top .family_site .close').on('click', function(){
+        $('footer .family_site').removeClass('on')
+    })
+
  })//$(document).ready
