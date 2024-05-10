@@ -390,8 +390,8 @@ footer .f_top .family_site.on .close {
 footer .f_top .family_site.on ul {
     display: block;
 }
-
 .f_bottom {
+    position: relative;
     background-color: #F0F0F0;
     padding: 30px 0;
     line-height: 2;
@@ -403,4 +403,27 @@ footer .f_top .family_site.on ul {
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+}
+.f_bottom .f_logo {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+.f_bottom .f_logo a {
+    display: inline-block;
+}
+.f_bottom .f_logo > a > img {
+    width: 217px;
+    height: auto;
+}
+.f_bottom .f_logo .sns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.f_bottom .f_logo .sns a {
+    text-align: center;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    padding: 12px 12px 0 12px;
 }
