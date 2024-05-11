@@ -304,36 +304,40 @@
     .visual .visual_btn .ctrl_btn {
         padding: 5px 2vw 3px 2vw;
     }
+    .visual .visual_btn .ctrl_btn .paging span {
+        font-size: 11px;
+    }
+    .visual .visual_btn .ctrl_btn .next {
+        margin-right: 0px;
+    }
     .visual .visual_btn .ctrl_btn .auto {
         margin: 0 10px;
     }
     .visual .visual_btn .ctrl_btn .auto > button::before {
-        left: -3px;
-        bottom: 0px;
-        width: 17px;
-        height: 17px;
+        left: -3.3px;
+        bottom: 1.5px;
+        width: 15px;
+        height: 15px;
         border: 3px solid rgba(0, 0, 0, 0.3);
     }
     .visual .visual_btn .ctrl_btn .circle_wrap {
-        left: -4px;
-        bottom: -1px;
+        left: -5px;
+        bottom: -1.9px;
         width: 25px;
         height: 25px;
     }
     .visual .visual_btn .ctrl_btn .circle_wrap svg {
-        width: 25px;
-        height: 25px;
+        width: 23px;
+        height: 23px;
     }
     .visual .visual_btn .ctrl_btn button {
-        background-size: 44% auto;
+        background-size: 40% auto;
     }
     .visual .visual_btn .ctrl_btn .paging {
         width: 33px;
         height: 1rem;
     }
 }
-
-
 
 .event{
     width: 100%;
@@ -470,38 +474,272 @@
 .event .depth3 > li .pagination {
     position: absolute;
     bottom: -50%;
-    left: 50%;
+    left: 58%;
     display: none;
     z-index: 90;
 }
+
 .event .depth3 > li.active .pagination {
     display: block;
 }
 .event .swiper-pagination-bullet-active {
     background: #444;
 }
+@media screen and (max-width:1400px) {
+    .event {
+        margin: 130px 0 70px 0;
+    }
+    .event h2 {
+        font-size: 30px;
+    }
+    .event .more {
+        margin: 13px 0 23px 0;
+    }
+    .event .more a {
+        font-size: 17px;
+    }
+    .event .more a::before {
+        right: -30px;
+        top: -4px;
+        background-size: 21px auto;
+    }
+    .event .depth3 > li > button {
+        font-size: 18px;
+        width: 227px;
+        height: 47px;
+    }
+    .event .depth3 > li .swiper {
+        width: calc(100% - 250px);
+    }
+    .event .depth3 > li .swiper ul li a .imginner {
+        height: 220px;
+    }
+    .event .depth3 > li .pagination {
+        bottom: -55%;
+        left: 57%;
 
-.app .appinner {
+    }
+}
+@media screen and (max-width:1000px) {
+    .event {
+        margin: 130px 0 30px 0;
+        height: 370px;
+    }
+    .event h2 {
+        font-size: 23px;
+    }
+    .event .more {
+        margin: 10px 0 17px 0;
+    }
+    .event .more a {
+        font-size: 15px;
+    }
+    .event .more a::before {
+        right: -27px;
+        top: -5px;
+        background-size: 17px;
+    }
+    .event .depth3 > li > button {
+        font-size: 17px;
+        width: 177px;
+        height: 37px;
+    }
+    .event .depth3 > li .swiper {
+        width: calc(100% - 193px);
+    }
+    .event .depth3 > li .swiper ul li a .imginner {
+        height: 173px;
+        border-radius: 13px;
+    }
+    .event .depth3 > li .swiper ul li a .one, 
+    .event .depth3 > li .swiper ul li a .two, 
+    .event .depth3 > li .swiper ul li a .dis {
+        right: 7px;
+        top: 6px;
+        padding: 4px 11px 0px 11px;
+    }
+    .event .depth3 > li .swiper ul li a strong {
+        margin: 17px 0 7px 0;
+    }
+    .event .depth3 > li .swiper ul li a .new {
+        left: 7px;
+        top: 6px;
+        padding: 3px 11px 1px 11px;
+    }
+    .event .depth3 > li .pagination {
+        bottom: -68%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+    }
+}
+@media screen and (max-width:640px) {
+    .event {
+        height: 400px;
+        margin: 70px 0px 70px;
+    }
+    .event h2 {
+        font-size: 20px;
+    }
+    .event .more {
+        margin: 10px 0 17px 0;
+        position: absolute;
+        right: 28px;
+        top: -4px;
+    }
+    .event ul.depth3 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 23px;
+    }
+    .event .depth3 > li {
+        width: 31%;
+    }
+    .event .depth3 > li > button {
+        font-size: 17px;
+        width: 100%;
+        height: 37px;
+        border: 1px solid #EAEAEA;
+        border-radius: 20px;
+        transition-duration: 150ms;
+        transition-timing-function: ease-in-out;
+    }
+    .event .depth3 > li.active > button {
+        border: 0px;
+    }
+    .event .depth3 > li .swiper {
+        width: 100%;
+        margin-top: 113px;
+    }
+    .event .depth3 > li .swiper ul li a strong {
+        margin: 13px 0 3px 0;
+        height: 37px;
+    }
+    .event .depth3 > li .swiper ul li a .imginner {
+        height: 173px;
+        border-radius: 7px;
+    }
+    .event .depth3 > li .swiper ul li a .new {
+        left: 3px;
+        top: 3px;
+        padding: 1px 7px 1px 7px;
+        font-size: 11px;
+    }
+    .event .depth3 > li .swiper ul li a .one, 
+    .event .depth3 > li .swiper ul li a .two, 
+    .event .depth3 > li .swiper ul li a .dis {
+        right: 3px;
+        top: 3px;
+        padding: 2px 7px 0px 7px;
+        font-size: 11px;
+    }
+    .event .depth3 > li .pagination {
+        bottom: -373%;
+    }
+}
+@media screen and (max-width:450px) {
+    .event h2 {
+        font-size: 18px;
+    }
+    .event .more a {
+        font-size: 13px;
+    }
+    .event .depth3 > li .pagination {
+        bottom: -400%;
+    }
+    .event .more a::before {
+        right: -25px;
+        top: -7px;
+        background-size: 13px;
+    }
+    .event .depth3 > li > button {
+        font-size: 15px;
+        height: 33px;
+    }
+    .event ul.depth3 {
+        margin-top: 20px;
+    }
+    .event .depth3 > li .swiper {
+        margin-top: 104px;
+    }
+}
+
+.app .app_inner {
+    background-color: #5C43E6;
     width: 100%;
     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     position: relative;
 }
-.app .appinner a {
+.app .app_inner .app_img img{
+    position: absolute;
     display: block;
 }
-.app .appinner a span {
-    position: absolute;
-    right: 250px;
-    bottom: 70px;
+.app .app_inner .app_img .app_icon {
+    left: 10%;
+    top: 0;
+    width: 275px;
+    margin-top: 70px;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+}
+.app .app_inner .app_img:hover .app_icon {
+    transform: rotate(15deg);
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+}
+
+.app .app_inner .app_img .paper {
+    left: 5%;
+    top: 0;
+    width: 370px;
+    margin-top: 10px;
+}
+.app .app_inner .app_img .paper { 
+    animation-name:animate_paper; 
+    animation-duration:7s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear 
+}
+@keyframes animate_paper {
+    0% { transform:translate(0, 0)  }
+    50% { transform:translate(3px, 7px)  }
+    100% { transform:translate(0, 0)  }
+}
+.app .app_inner .app_txt {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    padding-top: 10px;
+    text-align: center;
+}
+.app .app_inner .app_txt h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.app .app_inner .app_txt strong {
+    font-size: 20px;
+    margin: 15px 0 30px 0;
+}
+.app .app_inner .app_txt a {
+    display: block;
+}
+.app .app_inner .app_txt a span {
+    position: relative;
     color: #5C43E6;
     font-weight: 500;
     font-size: 25px;
     background-color: #FFF;
     padding: 10px 90px 5px 67px;
     border-radius: 30px;
-
 }
-.app .appinner a span::after {
+.app .app_inner a span::after {
     position: absolute;
     right: 55px;
     bottom: 13px;
@@ -513,9 +751,121 @@
     background-size: 20px auto;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 14.4688C9.83333 14.4688 9.67708 14.4427 9.53125 14.3906C9.38542 14.3385 9.25 14.25 9.125 14.125L4.625 9.625C4.375 9.375 4.25521 9.08333 4.26562 8.75C4.27604 8.41667 4.39583 8.125 4.625 7.875C4.875 7.625 5.17188 7.49479 5.51562 7.48438C5.85938 7.47396 6.15625 7.59375 6.40625 7.84375L8.75 10.1875V1.25C8.75 0.895833 8.86979 0.598958 9.10938 0.359375C9.34896 0.119792 9.64583 0 10 0C10.3542 0 10.651 0.119792 10.8906 0.359375C11.1302 0.598958 11.25 0.895833 11.25 1.25V10.1875L13.5938 7.84375C13.8438 7.59375 14.1406 7.47396 14.4844 7.48438C14.8281 7.49479 15.125 7.625 15.375 7.875C15.6042 8.125 15.724 8.41667 15.7344 8.75C15.7448 9.08333 15.625 9.375 15.375 9.625L10.875 14.125C10.75 14.25 10.6146 14.3385 10.4688 14.3906C10.3229 14.4427 10.1667 14.4688 10 14.4688ZM2.5 20C1.8125 20 1.22396 19.7552 0.734375 19.2656C0.244792 18.776 0 18.1875 0 17.5V15C0 14.6458 0.119792 14.349 0.359375 14.1094C0.598958 13.8698 0.895833 13.75 1.25 13.75C1.60417 13.75 1.90104 13.8698 2.14062 14.1094C2.38021 14.349 2.5 14.6458 2.5 15V17.5H17.5V15C17.5 14.6458 17.6198 14.349 17.8594 14.1094C18.099 13.8698 18.3958 13.75 18.75 13.75C19.1042 13.75 19.401 13.8698 19.6406 14.1094C19.8802 14.349 20 14.6458 20 15V17.5C20 18.1875 19.7552 18.776 19.2656 19.2656C18.776 19.7552 18.1875 20 17.5 20H2.5Z' fill='%235C43E6'/%3E%3C/svg%3E%0A");
 }
-.app .appinner a span:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+.app .app_inner a span:hover {
+    color: #4e36d6;
+    box-shadow: 0 3px 10px rgba(13, 3, 99, 0.6);
 } 
+@media screen and (max-width:1400px) {
+    .app .app_inner {
+        height: 360px;
+    }
+    .app .app_inner .app_img .app_icon {
+        width: 250px;
+    }
+    .app .app_inner .app_img .paper {
+        width: 332px;
+    }
+    .app .app_inner .app_txt h2 {
+        font-size: 30px;
+    }
+    .app .app_inner .app_txt strong {
+        font-size: 18px;
+        margin: 15px 0 30px 0;
+    }
+    .app .app_inner .app_txt a span {
+        font-size: 22px;
+        padding: 10px 90px 5px 67px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .app .app_inner .app_img .app_icon {
+        width: 180px;
+        margin-top: 53px;
+    }
+    .app .app_inner .app_img .paper {
+        width: 223px;
+        left: 4%;
+        top: -3px;
+    }
+    .app .app_inner .app_txt h2 {
+        font-size: 23px;
+    }
+    .app .app_inner {
+        height: 260px;
+    }
+    .app .app_inner .app_txt strong {
+        font-size: 15px;
+        margin: 10px 0 20px 0;
+    }
+    .app .app_inner .app_txt a span {
+        font-size: 18px;
+        padding: 7px 70px 3px 50px;
+    }
+    .app .app_inner a span::after {
+        right: 39px;
+        bottom: 5px;
+        background-size: 15px auto;
+    }
+}
+@media screen and (max-width:640px) {
+    .app .app_inner {
+        height: 200px;
+    }
+    .app .app_inner .app_txt h2 {
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .app .app_inner .app_txt strong {
+        font-size: 13px;
+        margin: 9px 0 18px 0;
+    }
+    .app .app_inner .app_img .paper {
+        width: 158px;
+        left: 3%;
+        top: 7px;
+    }
+    .app .app_inner .app_img .app_icon {
+        width: 113px;
+        margin-top: 56px;
+    }
+    .app .app_inner .app_txt a span {
+        font-size: 15px;
+        padding: 7px 57px 3px 33px;
+    }
+    .app .app_inner a span::after {
+        right: 33px;
+        bottom: 4px;
+        background-size: 14px auto;
+    }
+}
+@media screen and (max-width:450px) {
+    .app .app_inner {
+        height: 150px;
+    }
+    .app .app_inner .app_img .paper {
+        width: 105px;
+    }
+    .app .app_inner .app_img .app_icon {
+        width: 79px;
+        margin-top: 44px;
+    }
+    .app .app_inner .app_txt a span {
+        font-size: 13px;
+        padding: 6px 30px 2px 20px;
+    }
+    .app .app_inner a span::after {
+        right: 11px;
+        bottom: 0px;
+        background-size: 11px auto;
+    }
+    .app .app_inner .app_txt h2 {
+        font-size: 14px;
+    }
+    .app .app_inner .app_txt strong {
+        font-size: 13px;
+        margin: 5px 0 15px 0;
+    }
+}
 
 .discount {
     margin: 130px 0;

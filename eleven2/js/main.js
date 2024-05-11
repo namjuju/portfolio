@@ -98,46 +98,70 @@ $(document).ready(function(){
         $('.event .depth3 > li').removeClass('active')
         $(this).addClass('active')
     })
-    const event_swiper = new Swiper('.event .swiper1', { /* 팝업을 감싼는 요소의 class명 */
-        slidesPerView: 3, /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
-        spaceBetween: 0, /* 팝업과 팝업 사이 여백 */
+    const event_swiper = new Swiper('.event .swiper1', {
+        slidesPerView: 2,
+        spaceBetween: 9,
         breakpoints: {
-            768: {
-                slidesPerView: '4', /* 사이즈제한 */
+            640: {
+                slidesPerView: '3',
+                spaceBetween: 9,
+            },
+            1000: {
+                slidesPerView: '4',
+                spaceBetween: 11,
+            },
+            1400: {
+                slidesPerView: '4',
                 spaceBetween: 27,
             },
         },
-        pagination: {  /* 몇개의 팝업이 있는지 보여주는 동그라미 */
-            el: '.event .swiper1 + .pagination', /* 해당 요소의 class명 */
-            clickable: true,  /* 클릭하면 해당 팝업으로 이동할 것인지 값 */
+        pagination: {
+            el: '.event .swiper1 + .pagination',
+            clickable: true,
         },
     });
-    const event_swiper2 = new Swiper('.event .swiper2', { /* 팝업을 감싼는 요소의 class명 */
-        slidesPerView: 3, /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
-        spaceBetween: 0, /* 팝업과 팝업 사이 여백 */
+    const event_swiper2 = new Swiper('.event .swiper2', {
+        slidesPerView: 2, 
+        spaceBetween: 7,
         breakpoints: {
-            768: {
-                slidesPerView: '4', /* 사이즈제한 */
+            640: {
+                slidesPerView: '3',
+                spaceBetween: 7,
+            },
+            1000: {
+                slidesPerView: '4',
+                spaceBetween: 11,
+            },
+            1400: {
+                slidesPerView: '4',
                 spaceBetween: 27,
             },
         },
-        pagination: {  /* 몇개의 팝업이 있는지 보여주는 동그라미 */
-            el: '.event .swiper2 + .pagination', /* 해당 요소의 class명 */
-            clickable: true,  /* 클릭하면 해당 팝업으로 이동할 것인지 값 */
+        pagination: {
+            el: '.event .swiper2 + .pagination',
+            clickable: true,
         },
     });
-    const event_swiper3 = new Swiper('.event .swiper3', { /* 팝업을 감싼는 요소의 class명 */
-        slidesPerView: 3, /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
-        spaceBetween: 0, /* 팝업과 팝업 사이 여백 */
+    const event_swiper3 = new Swiper('.event .swiper3', { 
+        slidesPerView: 2,
+        spaceBetween: 7,
         breakpoints: {
-            768: {
-                slidesPerView: '4', /* 사이즈제한 */
+            640: {
+                slidesPerView: '3',
+                spaceBetween: 7,
+            },
+            1000: {
+                slidesPerView: '4',
+                spaceBetween: 11,
+            },
+            1400: {
+                slidesPerView: '4',
                 spaceBetween: 27,
             },
         },
-        pagination: {  /* 몇개의 팝업이 있는지 보여주는 동그라미 */
-            el: '.event .swiper3 + .pagination', /* 해당 요소의 class명 */
-            clickable: true,  /* 클릭하면 해당 팝업으로 이동할 것인지 값 */
+        pagination: {
+            el: '.event .swiper3 + .pagination',
+            clickable: true,
         },
     });
 
