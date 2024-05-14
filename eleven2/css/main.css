@@ -869,6 +869,7 @@
 
 .discount {
     margin: 130px 0;
+    position: relative;
 }
 .discount h2 {
     font-size: 40px;
@@ -961,41 +962,31 @@
 .discount .swiper ul li a:hover .amount span {
     color: #FFF;
 }
-.discount .dis_btn {
-    margin: 60px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.discount .dis_btn .pagination {
-    width: 80px;
-    padding-top: 4px;
-}
-.discount .dis_btn button {
-    width: 41px;
-    height: 41px;
-    border-radius: 100%;
-    border: 1px solid #FFF;
-    font-size: 0;
-    line-height: 0;
-    margin-right: 5px;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-.discount .dis_btn button.prev {
-    background-size: 9px auto;
-    background-image: url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.19507 7.5L8.4417 12.7466C8.68834 12.9933 8.81166 13.3072 8.81166 13.6883C8.81166 14.0695 8.68834 14.3834 8.4417 14.63C8.19507 14.8767 7.88117 15 7.5 15C7.11883 15 6.80493 14.8767 6.5583 14.63L0.369955 8.4417C0.235426 8.30717 0.140135 8.16144 0.0840807 8.00448C0.0280269 7.84753 0 7.67937 0 7.5C0 7.32063 0.0280269 7.15247 0.0840807 6.99552C0.140135 6.83856 0.235426 6.69282 0.369955 6.5583L6.5583 0.369955C6.80493 0.123318 7.11883 0 7.5 0C7.88117 0 8.19507 0.123318 8.4417 0.369955C8.68834 0.616592 8.81166 0.930493 8.81166 1.31166C8.81166 1.69283 8.68834 2.00673 8.4417 2.25336L3.19507 7.5Z' fill='%23333333'/%3E%3C/svg%3E%0A");
-}
-.discount .dis_btn button.next {
-    background-size: 9px auto;
-    background-image: url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.61646 7.5L0.369819 2.25336C0.123182 2.00673 -0.000136585 1.69283 -0.000136618 1.31166C-0.000136652 0.930494 0.123182 0.616593 0.369818 0.369957C0.616455 0.123319 0.930357 1.64267e-06 1.31152 1.60935e-06C1.69269 1.57602e-06 2.00659 0.123319 2.25323 0.369957L8.44157 6.5583C8.5761 6.69283 8.67139 6.83856 8.72744 6.99552C8.7835 7.15247 8.81152 7.32063 8.81152 7.5C8.81152 7.67937 8.7835 7.84753 8.72744 8.00448C8.67139 8.16144 8.5761 8.30718 8.44157 8.4417L2.25323 14.63C2.00659 14.8767 1.69269 15 1.31152 15C0.930358 15 0.616456 14.8767 0.36982 14.63C0.123183 14.3834 -0.000135503 14.0695 -0.000135536 13.6883C-0.00013557 13.3072 0.123183 12.9933 0.369819 12.7466L5.61646 7.5Z' fill='%23333333'/%3E%3C/svg%3E%0A");
+.discount .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, 
+.discount .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    position: absolute;
+    bottom: -40px;
+    content: "";
 }
 .discount .swiper-pagination-bullet-active {
-    background: #444;;
+    background: #555;
 }
-
-/*사업실적검색 - 사업분야*/
-
+@media screen and (max-width:1400px) {
+    .discount h2 {
+        font-size: 30px;
+    }
+    .discount .more a {
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+    .discount .more a::before {
+        right: -31px;
+        top: -2px;
+        background-size: 21px auto;
+    }
+}
 .search {
     margin: 120px 0 13px 0;
 }
@@ -1028,13 +1019,15 @@
 }
 .search p {
     font-size: 20px;
+    color: #555;
 }
 .search .search_wrap {
     display: flex;
     flex-direction: column;
 }
 .search .search_group .search {
-    width: 770px;
+    max-width: 770px;
+    width: 60vw;
     height: 70px;
     padding: 0 0 0 30px;
     display: flex;
@@ -1078,7 +1071,6 @@
     background-size: contain;
     margin-left: 35px;
 }
-
 .search .search_wrap .search_tag ul {
     display: flex;
     justify-content: space-around;
@@ -1098,7 +1090,36 @@
     font-size: 17px;
     padding: 10px 25px 5px 25px;
 }
+.search .search_inner .search_img {
+    width: 363px;
+}
+.search .search_inner .search_img img {
+    width: 100%;
+    object-fit:cover
+}
+@media screen and (max-width:1400px) {
+    .search h2 {
+        font-size: 30px;
+    }
+    .search h2 em {
+        width: 178px;
+        height: 26px;
+        background-size: contain;
+        vertical-align: middle;
+        margin: 0 8px;
+    }
+    .search p {
+        font-size: 18px;
+    }
+    .search .search_group .search input[type="text"] {
+        font-size: 20px;
+    }
+    .search .search_wrap .search_tag ul li a {
+        font-size: 15px;
+        padding: 8px 20px 3px 20px;
+    }
 
+}
 .banner {
     margin: 170px 0;
 }
@@ -1109,6 +1130,9 @@
 }
 .banner .bannerinner a {
     display: block;
+}
+.banner .bannerinner a img {
+    width: 100%;
 }
 
 .startups {
@@ -1243,6 +1267,36 @@
     left: -37px;
     bottom: -2px;
 }
+@media screen and (max-width:1400px) {
+    .startups h2 {
+        font-size: 30px;
+    }
+    .startups p {
+        font-size: 18px;
+        margin: 13px 0 40px 0;
+    }
+    .startups .start_icon ul li a::before {
+        right: 10px;
+        bottom: 8px;
+        width: 43px;
+        height: 43px;
+    }
+    .startups .start_icon ul li a img {
+        width: 170px;
+    }
+    .startups .start_icon ul li a .txt span {
+        font-size: 20px;
+    }
+    .startups .start_icon ul li a .txt i {
+        width: 60px;
+        height: 60px;
+    }
+    .startups .start_icon ul li a::after {
+        background-size: 20px auto;
+        right: 7px;
+        bottom: 4px;
+    }
+}
 
 .brand {
     position: relative;
@@ -1253,7 +1307,6 @@
 }
 .brand .brand_bg img {
     width: 100%;
-    height: 100%;
     object-fit:cover;
 }
 .brand .brand_img img {
@@ -1329,4 +1382,16 @@
 .brand .brand_txt p {
     margin-top: 20px;
     font-size: 25px;
+}
+@media screen and (max-width:1400px) {
+    .brand .brand_txt h2 {
+        font-size: 25px;
+    }
+    .brand .brand_txt {
+        left: 5vw;
+        top: 120px;
+    }
+    .brand .brand_txt p {
+        font-size: 20px;
+    }
 }

@@ -117,7 +117,7 @@ $(document).ready(function(){
         },
         pagination: {
             el: '.event .swiper1 + .pagination',
-            clickable: true,
+            dynamicBullets: true,
         },
     });
     const event_swiper2 = new Swiper('.event .swiper2', {
@@ -139,7 +139,7 @@ $(document).ready(function(){
         },
         pagination: {
             el: '.event .swiper2 + .pagination',
-            clickable: true,
+            dynamicBullets: true,
         },
     });
     const event_swiper3 = new Swiper('.event .swiper3', { 
@@ -161,16 +161,24 @@ $(document).ready(function(){
         },
         pagination: {
             el: '.event .swiper3 + .pagination',
-            clickable: true,
+            dynamicBullets: true,
         },
     });
 
-    const discount_swiper = new Swiper('.discount .swiper', { /* 팝업을 감싼는 요소의 class명 */
-        slidesPerView: "auto", /* li의 넓이 비율로 안함 - css에서 준 넓이대로 함 */
-        spaceBetween: 16, /* li와 li사이 - 제일 작은 여백 */
+    const discount_swiper = new Swiper('.discount .swiper', { 
+        slidesPerView: 2, 
+        spaceBetween: 10,
         breakpoints: {
-            1024: {  /* 1024px 이상이 되면 적용 */
-                slidesPerView: "8", /* li의 넓이 비율로 안함 - css에서 준 넓이대로 함 */
+            640: {  
+            slidesPerView: "4",
+            spaceBetween: 20,
+            },
+            1000: { 
+                slidesPerView: "6",
+                spaceBetween: 20,
+            },
+            1500: { 
+                slidesPerView: "8",
                 spaceBetween: 20,
             },
         },
@@ -178,9 +186,9 @@ $(document).ready(function(){
             nextEl: '.discount .next',
             prevEl: '.discount .prev',
         },
-        pagination: {  /* 몇개의 팝업이 있는지 보여주는 동그라미 */
-            el: '.discount .pagination', /* 해당 요소의 class명 */
-            clickable: true,  /* 클릭하면 해당 팝업으로 이동할 것인지 값 */
+        pagination: {  
+            el: '.discount .pagination',
+            dynamicBullets: true,
         },
     });
 
