@@ -31,6 +31,9 @@ $(document).ready(function(){
 		$('header ul li').removeClass('on')
 		$(this).addClass('on')
 	})
+	$('.home .visual .scroll a').on('click', function(){
+		swiper.slideTo($(this).index())
 
+	})
 
 })
