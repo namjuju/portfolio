@@ -314,7 +314,7 @@ header ul li.on a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 77vw;
+    width: 80vw;
     height: 70vh;
     content: "";
     display: flex;
@@ -324,6 +324,9 @@ header ul li.on a {
 
 .profile .profile_left {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .profile .profile_left h2 {
     font-size: 0;
@@ -331,10 +334,10 @@ header ul li.on a {
 }
 .profile .profile_left h2::before {
     position: absolute;
-    left: -45px;
-    top: -45px;
-    width: 300px;
-    height: 200px;
+    left: -30px;
+    top: -10px;
+    width: 17vw;
+    height: 13vh;
     content: "";
     background: url(../images/profile02.png) no-repeat center center / contain;
     transform: rotate(348deg);
@@ -343,75 +346,202 @@ header ul li.on a {
     text-align: center;
     border-radius: 100%;
     overflow: hidden;  
-    transform: translate(0, 0);
-    transition: transform 0.3s ease-in-out;
+    width: 23vh;
+    font-size: 0;
+    line-height: 0;
+    border: 7px solid rgb(253 245 229);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
 }
 .profile .profile_left .poto img {
-    width: 250px;
+    width: 100%;
 }
 .profile .profile_left .poto:hover {
-    transform: translate(-5px, -5px);
     transition-duration: 0.3s;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+    border: 7px solid #f69530;
 }
 .profile .profile_left .main_txt {
-    margin: 10px 0 77px 0;
+    margin: 10px 0 8vh 0;
     position: relative;
 }
 .profile .profile_left .main_txt::before {
     position: absolute;
     left: 50%;
-    bottom: -65px;
+    bottom: -7.5vh;
     content: "";
     width: 1px;
-    height: 50px;
-    background-color: #999;
+    height: 6vh;
+    background-color: #b3b3b3;
 }
 .profile .profile_left .main_txt strong {
-    font-size: 1.7rem;
+    font-size: 2vw;
     color: #333;
     font-weight: 700;
     display: block;
 }
 .profile .profile_left .main_txt em {
     color: #777;
-    font-size: 1rem;
+    font-size: 1vw;
     display: block;
 }
 .profile .profile_left .sub_txt {
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     font-weight: 500;
     color: #333;
-    line-height: 2;
+    line-height: 4vh;
 }
-
-.profile .profile_right {
-    margin-top: 30px;
-}
-.profile .profile_right .txt_top {
-    margin-bottom: 70px;
+.profile .profile_left .sub_txt li:hover {
+    font-weight: 700;
 }
 .profile .profile_right .txt_top .education,
 .profile .profile_right .txt_bottom .certificate {
     display: flex;
     justify-content: flex-start;
 }
+.profile .profile_right .txt_top,
+.profile .profile_right .txt_bottom {
+    margin-bottom: 2vh;
+    padding: 3vh 4vw;
+    background-color: #f0e5d0;
+    border-radius: 30px;
+    position: relative;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.profile .profile_right .txt_top::before,
+.profile .profile_right .txt_bottom::before {
+    position: absolute;
+    left: -3vh;
+    top: 32px;
+    width: 5vh;
+    height: 5vh;
+    background: url(../images/profile04.png) no-repeat center center / contain;
+    content: "";
+}
+.profile .profile_right .txt_top:hover,
+.profile .profile_right .txt_bottom:hover {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+}
 .profile .profile_right h3 {
-    font-size: 25px;
+    font-size: 1.7vw;
     font-weight: 500;
 }
 .profile .profile_right .txt {
-    margin-left: 77px;
+    margin-left: 5vw;
 }
 .profile .profile_right .sub_txt {
-    margin-bottom: 20px;
+    margin-bottom: 1vh;
+}
+.profile .profile_right .sub_txt p {
+    font-size: 1vw;
 }
 .profile .profile_right .sub_txt span {
+    font-size: 1.3vw;
     font-weight: 500;
 }
-.profile .profile_right .sub_txt:hover,
-.profile .profile_right .sub_txt:hover span {
-    font-weight: 700;
+@media screen and (max-width:768px) {
+    .profile {
+        height: calc(100vh - 100px);
+    }
+    .profile .inner {
+        width: 90vw;
+        height: 77vh;
+    }
+    .profile .profile_left h2::before {
+        left: -10px;
+        top: -27px;
+        width: 20vw;
+        height: 13vh;
+    }
+    .profile .profile_left .poto {
+        width: 20vh;
+    }
+    .profile .profile_left .main_txt strong {
+        font-size: 20px;
+    }
+    .profile .profile_left .main_txt em {
+        font-size: 15px;
+    }
+    .profile .profile_left .sub_txt {
+        font-size: 15px;
+    }
+    .profile .profile_right h3 {
+        font-size: 15px;
+        margin-bottom: 3vh;
+        color: #cb955c;
+        font-weight: 700;
+    }
+    .profile .profile_right .sub_txt p {
+        font-size: 13px;
+    }
+    .profile .profile_right .sub_txt span {
+        font-size: 15px;
+    }
+    .profile .profile_right .txt {
+        margin-left: 0;
+    }
+    .profile .profile_right .txt_top, .profile .profile_right .txt_bottom {
+        padding: 3vh 3vw;
+    }
+    .profile .profile_right .txt_top::before, .profile .profile_right .txt_bottom::before {
+        left: -2.3vh;
+        top: 32px;
+        width: 4vh;
+        height: 4vh;
+    }
+    .profile .profile_right .txt_top .education, .profile .profile_right .txt_bottom .certificate {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile .profile_left {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .profile .profile_right {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:450px) {
+    .profile .inner {
+        width: 90vw;
+        height: 80vh;
+    }
+    .profile .profile_left {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .profile .profile_left .poto {
+        width: 16vh;
+    }
+    .profile .profile_left .main_txt strong {
+        font-size: 17px;
+    }
+    .profile .profile_left .main_txt em {
+        font-size: 13px;
+    }
+    .profile .profile_left .sub_txt {
+        font-size: 13px;
+    }
+    .profile .profile_right .sub_txt p {
+        font-size: 11px;
+    }
+    .profile .profile_right .sub_txt span {
+        font-size: 13px;
+    }
+    .profile .profile_right h3 {
+        font-size: 13px;
+        margin-bottom: 2vh;
+    }
+    .profile .profile_right {
+        margin-right: 10px;
+    }
+    .profile .profile_right .txt_top, .profile .profile_right .txt_bottom {
+        padding: 11px 15px 6px 15px;
+        border-radius: 20px;
+    }
 }
 .project1 .bus {
     display: flex;

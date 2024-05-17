@@ -1300,6 +1300,8 @@
 
 .brand {
     position: relative;
+    width: 100%;
+
 }
 .brand .brand_bg {
     width: 100vw;
@@ -1370,7 +1372,7 @@
     position: absolute;
     left: 10vw;
     top: 251px;
-    width: 35%;
+    width: 30%;
 }
 .brand .brand_txt h2 {
     font-size: 33px;
@@ -1378,6 +1380,17 @@
 }
 .brand .brand_txt h2 span {
     color: #ed0102;
+}
+.brand .brand_txt h2 span { 
+    animation-name:animate_color; 
+    animation-duration:5s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear 
+}
+@keyframes animate_color {
+0% { color: #00903B; }
+50% { color: #ed0102; }
+100% { color: #ffba0c; }
 }
 .brand .brand_txt p {
     margin-top: 20px;
