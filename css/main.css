@@ -424,7 +424,7 @@ header ul li.on a {
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
 }
 .profile .profile_right h3 {
-    font-size: 1.7vw;
+    font-size: 1.3vw;
     font-weight: 500;
 }
 .profile .profile_right .txt {
@@ -437,7 +437,7 @@ header ul li.on a {
     font-size: 1vw;
 }
 .profile .profile_right .sub_txt span {
-    font-size: 1.3vw;
+    font-size: 1vw;
     font-weight: 500;
 }
 @media screen and (max-width:768px) {
