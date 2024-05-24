@@ -174,10 +174,10 @@ $(document).ready(function(){
             spaceBetween: 20,
             },
             1000: { 
-                slidesPerView: "6",
+                slidesPerView: "5",
                 spaceBetween: 20,
             },
-            1500: { 
+            1400: { 
                 slidesPerView: "8",
                 spaceBetween: 20,
             },

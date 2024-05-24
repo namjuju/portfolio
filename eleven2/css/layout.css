@@ -448,6 +448,9 @@ footer .f_top .family_site.on ul {
 .f_bottom .f_depth1 li {
     margin-right: 25px;
 }
+.f_bottom .f_depth1 li:last-child {
+    margin-right: 0;
+}
 .f_bottom .f_depth1 li a {
     display: block;
     position: relative;
@@ -517,4 +520,142 @@ background-image: url("data:image/svg+xml,%3Csvg width='37' height='37' viewBox=
 .f_bottom .f_logo ul.sns li a:hover {
     background-color: #b6b6b6;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width:1000px) {
+    footer .f_top .f_list > ul > li > a {
+        font-weight: 700;
+        width: 110px;
+        line-height: 1.7;
+    }
+    footer .f_top .f_list > ul > li > ul > li > a {
+        padding-right: 13px;
+        line-height: 1.7;
+    }
+    footer .f_top .f_list > ul > li > ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 106px;
+    }
+    footer .f_top .family_site .open, footer .f_top .family_site .close {
+        padding: 16px 60px 13px 30px;
+    }
+    footer .f_top .family_site .open::after, footer .f_top .family_site .close::after {
+        position: absolute;
+        right: 30px;
+        top: 18px;
+        width: 10px;
+        height: 10px;
+    }
+    .f_bottom .f_logo > a > img {
+        width: 185px;
+        height: auto;
+    }
+    .f_bottom .f_logo {
+        position: relative;
+        top: 0;
+    }
+    .f_bottom .f_logo ul.sns {
+        margin-top: 7px;
+        display: flex;
+        justify-content: center;
+    }
+    .f_bottom .f_depth1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .f_bottom {
+        padding: 30px 0;
+        line-height: 1.8;
+        text-align: center;
+    }
+    .f_bottom .f_logo ul.sns li {
+        margin: 0 20px;
+    }
+    .f_bottom .f_depth2 {
+        display: flex;
+        flex-direction: column;
+        margin: 13px 0;
+    }
+    .f_bottom .f_depth1 li a::before {
+        top: 9px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    footer .f_top .family_site {
+        position: relative;
+        right: 0;
+        top: 10px;
+    }
+    footer .f_top .f_list > ul > li > ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0;
+        margin-left: 13px;
+    }
+    footer .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .f_top .f_list > ul > li > a {
+        font-weight: 700;
+        width: 130px;
+        line-height: 1.7;
+    }
+    footer .f_top .family_site .open, footer .f_top .family_site .close {
+        padding: 7px 60px 5px 30px;
+    }
+    footer .f_top .family_site .open::after, footer .f_top .family_site .close::after {
+        position: absolute;
+        right: 30px;
+        top: 9px;
+        width: 10px;
+        height: 10px;
+    }
+    footer .f_top .f_list > ul > li {
+        padding: 7px 0;
+    }
+    footer .f_top {
+        padding: 20px 0 27px 0;
+    }
+    .f_bottom .f_logo > a > img {
+        width: 177px;
+    }
+    .f_bottom .f_logo ul.sns {
+        margin-top: 5px;
+    }
+    .f_bottom .f_logo ul.sns .insta a {
+        background-size: 27px auto;
+    }
+    .f_bottom .f_logo ul.sns .youtube a {
+        background-size: 27px auto;
+    }
+    .f_bottom .f_logo ul.sns li a {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:450px) {
+    .f_bottom .f_logo > a > img {
+        width: 170px;
+    }
+    .f_bottom .f_depth1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .f_bottom .f_depth1 li {
+        margin-right: 15px;
+    }
+    .f_bottom .f_depth1 li a::before {
+        right: -10px;
+        width: 2px;
+        height: 2px;
+    }
+    .f_bottom .f_depth2 {
+        line-height: 1.5;
+    }
 }
