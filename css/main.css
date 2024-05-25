@@ -1211,13 +1211,13 @@ header ul li.on a {
     display: flex;
     justify-content: space-around;
     margin: 5vh 0;
-    align-items: stretch;
+    align-items: center;
 }
 .project3 .eleven .eleven_txt {
     margin: 0 3vw 0 10vw;
 }
 .project3 .eleven .eleven_txt h2 {
-    font-size: 70px;
+    font-size: 4vw;
     color: #008c37;;
     font-weight: 700;
     margin-bottom: 30px;
