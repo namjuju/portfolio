@@ -1207,6 +1207,58 @@ header ul li.on a {
         width: 77px;
     }
 }
+.project3 .eleven {
+    display: flex;
+    justify-content: space-around;
+    margin: 5vh 0;
+    align-items: flex-start;
+}
+.project3 .eleven .eleven_txt {
+    margin-right: 20px;
+}
+.project3 .eleven .eleven_txt h2 {
+    font-size: 70px;
+    color: #008c37;;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    line-height: 1;
+}
+.project3 .eleven .eleven_txt > strong {
+    font-size: 25px;
+    display: block;
+    margin: 40px 0 20px 0;
+}
+.project3 .eleven .eleven_txt > span {
+    font-size: 25px;
+    font-weight: 500;
+    display: block;
+    line-height: 2;
+}
+.project3 .eleven .eleven_txt > p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.project3 .eleven .eleven_txt .box {
+    display: flex;
+    line-height: 2.5;
+}
+.project3 .eleven .eleven_txt .box span {
+    font-weight: 500;
+    width: 180px;
+}
+.project3 .eleven .eleven_txt .box .line {
+    line-height: 1.5;
+}
+.eleven .eleven_mockup a {
+    display: block;
+    width: 60vw;
+    margin-left: 10vw;
+}
+.eleven .eleven_mockup a img{
+    width: 100%;
+}
+
 .end {
     position: relative;
 }
