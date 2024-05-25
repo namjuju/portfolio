@@ -1211,23 +1211,95 @@ header ul li.on a {
     display: flex;
     justify-content: space-around;
     margin: 5vh 0;
-    align-items: flex-start;
+    align-items: stretch;
 }
 .project3 .eleven .eleven_txt {
-    margin-right: 20px;
+    margin: 0 3vw 0 10vw;
 }
 .project3 .eleven .eleven_txt h2 {
     font-size: 70px;
     color: #008c37;;
     font-weight: 700;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    margin-bottom: 30px;
     line-height: 1;
 }
-.project3 .eleven .eleven_txt > strong {
-    font-size: 25px;
+.project3 .eleven .eleven_txt .eleven_btn {
+    display: flex;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    margin-right: 15px;
+}
+.menu a {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    position: relative;
     display: block;
-    margin: 40px 0 20px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #555;
+    border-radius: 0 20px 20px 20px;
+}
+.menu a:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    bottom: -15px;
+    right: -15px;
+    background: #555;
+    border-radius: 0 20px 20px 20px;
+    padding: 10px 15px;
+    z-index: -1;
+    opacity: 1;
+    transform: scale3d(0.8, 0.5, 1);
+}
+.menu .gr a:hover {
+    background-color: #46aa6e;
+}
+.menu .or a:hover {
+    background-color: #f2761d;
+}
+.menu a:hover::before {
+    animation: anim-moema-2 0.3s 0.3s forwards;
+}
+.menu .gr a:hover {
+    transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+    background-color: #46aa6e;
+    animation: anim-moema-1 0.3s forwards;
+}
+.menu .or a:hover {
+    transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+    background-color: #f2761d;
+    animation: anim-moema-1 0.3s forwards;
+}
+  
+@-webkit-keyframes anim-moema-2 {
+    to {opacity: 0; transform: scale3d(1, 1, 1);}
+}
+@keyframes anim-moema-2 {
+    to {opacity: 0; transform: scale3d(1, 1, 1);}
+}
+@-webkit-keyframes anim-moema-1 {
+    60% {transform: scale3d(0.8, 0.8, 1);}
+    85% {transform: scale3d(1.1, 1.1, 1);}
+    100% {transform: scale3d(1, 1, 1);}
+}
+@keyframes anim-moema-1 {
+    60% {transform: scale3d(0.8, 0.8, 1);}
+    85% {transform: scale3d(1.1, 1.1, 1);}
+    100% {transform: scale3d(1, 1, 1);}
+}
+  
+.project3 .eleven .eleven_txt > strong {
+    font-size: 23px;
+    display: block;
+    margin: 45px 0 10px 0;
+    color: #777;
 }
 .project3 .eleven .eleven_txt > span {
     font-size: 25px;
@@ -1236,11 +1308,13 @@ header ul li.on a {
     line-height: 2;
 }
 .project3 .eleven .eleven_txt > p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
+    width: 30vw;
 }
 .project3 .eleven .eleven_txt .box {
     display: flex;
+    align-items: baseline;
     line-height: 2.5;
 }
 .project3 .eleven .eleven_txt .box span {
@@ -1252,11 +1326,11 @@ header ul li.on a {
 }
 .eleven .eleven_mockup a {
     display: block;
-    width: 60vw;
-    margin-left: 10vw;
+    width: 70vw;
 }
 .eleven .eleven_mockup a img{
     width: 100%;
+    margin-top: 30px;
 }
 
 .end {
