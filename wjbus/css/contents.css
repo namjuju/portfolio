@@ -162,6 +162,10 @@
     }
     
 }
+.cts_laborgreeting .inner {
+    text-align: center;
+    margin-top: 50px;
+}
 
 /* 연혁 - 회사소개 */
 .cts_history {
