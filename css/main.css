@@ -665,16 +665,9 @@ img.deco03 {
     animation: anim-moema-1 0.3s forwards;
 }
   
-@-webkit-keyframes anim-moema-2 {
-    to {opacity: 0; transform: scale3d(1, 1, 1);}
-}
+
 @keyframes anim-moema-2 {
     to {opacity: 0; transform: scale3d(1, 1, 1);}
-}
-@-webkit-keyframes anim-moema-1 {
-    60% {transform: scale3d(0.8, 0.8, 1);}
-    85% {transform: scale3d(1.1, 1.1, 1);}
-    100% {transform: scale3d(1, 1, 1);}
 }
 @keyframes anim-moema-1 {
     60% {transform: scale3d(0.8, 0.8, 1);}
