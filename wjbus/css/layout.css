@@ -347,15 +347,15 @@ header.fixed .logo a {
     }
 }
 footer {
-    height: 444px;
+    height: 390px;
     background-color: #1d1d1d;
     color: #FFF;
     line-height: 1.7;
 }
 footer .f_top {
-    margin-top: 160px;
+    margin-top: 97px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 57px;
+    padding-bottom: 50px;
 }
 footer .f_top ul li span {
     font-weight: 500;
