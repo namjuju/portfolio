@@ -181,7 +181,7 @@
 .cts_laborgreeting .inner {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin: 130px 0;
 }
 .cts_laborgreeting .inner .labor_txt {
     width: 70%;
@@ -198,4 +198,21 @@
 }
 .cts_laborgreeting .inner .labor_txt p span {
     font-weight: 500;
+    line-height: 2;
+}
+@media screen and (max-width:768px) {
+    .cts_laborgreeting .inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 70px 0 100px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cts_laborgreeting .inner .labor_txt h2 {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    .cts_laborgreeting .inner .labor_txt {
+        width: 100%;
+    }
 }

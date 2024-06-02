@@ -1271,7 +1271,7 @@
 
 @media screen and (max-width:768px) {
     .quick {
-        height: 280px;
+        height: 345px;
     }
     .quick .quick_tit {
         margin: 60px 0 45px 0;
@@ -1298,7 +1298,7 @@
 }
 @media screen and (max-width:450px) {
     .quick {
-        height: 240px;
+        height: 299px;
     }
     .quick .quick_tit {
         margin: 50px 0 33px 0;
@@ -1380,19 +1380,19 @@
 }
 @media screen and (max-width:768px) {
     .intranet {
-        height: 100px;
+        height: 70px;
     }
     .intranet::before {
         right: auto;
         width: 100%;
-        bottom: -87px;
+        bottom: 0;
         border-radius: 0;
     }
     .intranet .txt span {
-        font-size: 25px;
+        font-size: 22px;
     }
     .intranet .txt {
-        margin-top: 108px;
+        margin-top: 9px;
     }
     .intranet .txt a::after {
         position: absolute;
@@ -1403,37 +1403,9 @@
     }
 }
 @media screen and (max-width:450px) {
-    .intranet {
-        height: 100px;
-    }
-    .intranet::after {
-        top: 129%;
-        right: 5%;
-        width: 30px;
-        height: 20px;
-    }
-    .intranet .txt {
-        margin-top: 113px;
-    }
-    .intranet .txt span {
-        font-size: 20px;
-    }
-    .intranet .txt p {
-        font-size: 15px;
-    }
+
 }
 @media screen and (max-width:375px)  {
-    .intranet {
-        height: 80px;
-    }
-    .intranet::before {
-        bottom: -70px;
-    }
-    .intranet .txt {
-        margin-top: 87px;
-    }
-    .intranet .txt p {
-        font-size: 13px;
-    }
+
 }
 
